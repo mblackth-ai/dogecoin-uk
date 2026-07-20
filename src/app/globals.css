@@ -617,6 +617,125 @@ svg {
   }
 }
 
+.article-main {
+  padding-bottom: 2rem;
+}
+
+.article {
+  padding-block: clamp(2rem, 6vw, 3.5rem);
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+}
+
+.article h1 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: var(--h1);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.article-hook {
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.article-summary {
+  margin: 0;
+  color: var(--navy-soft);
+}
+
+.article p {
+  margin: 0;
+  color: var(--navy-soft);
+}
+
+.article a {
+  color: var(--navy);
+  font-weight: 600;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem !important;
+}
+
+.tag-row span {
+  font-size: var(--small);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid var(--line);
+  padding: 0.3rem 0.5rem;
+  color: var(--navy-soft);
+}
+
+.related-rail {
+  margin-bottom: 1.5rem;
+}
+
+.related-rail h2 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.15rem;
+  margin: 0 0 0.75rem;
+}
+
+.related-rail ul,
+.hub-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.related-rail li,
+.hub-list li {
+  background: var(--surface);
+}
+
+.related-rail a,
+.hub-list a {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.95rem 1.1rem;
+  text-decoration: none;
+}
+
+.related-rail a:hover,
+.hub-list a:hover {
+  background: color-mix(in srgb, var(--gold) 16%, var(--surface));
+}
+
+.related-rail strong,
+.hub-list strong {
+  font-family: var(--font-display), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.related-rail span,
+.hub-list span {
+  color: var(--navy-soft);
+  font-size: var(--small);
+}
+
+.pillar-hero h1 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: var(--h1);
+  margin: 0 0 0.75rem;
+}
+
+.map-stats {
+  margin-top: 1.5rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .hero-brand,
   .hero h1,

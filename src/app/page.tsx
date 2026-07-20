@@ -1,19 +1,20 @@
+import Link from "next/link";
+import {
+  getGraphStats,
+  getHubs,
+  getPagesByPillar,
+  PILLARS,
+} from "../content";
 import { AssetPipeline, LeadFunnel } from "./components/Interactive";
+import { SiteFooter, SiteHeader } from "./components/SiteChrome";
 
 export default function Home() {
+  const stats = getGraphStats();
+  const hubs = getHubs();
+
   return (
     <>
-      <header className="shell site-header">
-        <a className="brand" href="#top">
-          Dogecoin
-        </a>
-        <nav className="site-nav" aria-label="Primary">
-          <a href="#tracks">Tracks</a>
-          <a href="#status">Status</a>
-          <a href="#proof">Proof</a>
-          <a href="#join">Join</a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main id="top">
         <section className="hero shell" aria-labelledby="hero-brand">
@@ -23,17 +24,17 @@ export default function Home() {
             </p>
             <h1>UK home for DOGE — clear, calm, useful.</h1>
             <p className="hero-lede">
-              dogecoin.co.uk is an unofficial community site: plain-English
-              explainers, safety guides, and updates for people in the UK who
-              want signal without the circus.
+              People land here for belonging, safety, and plain English — not
+              carnival price calls. Three pillars. One growing graph of{" "}
+              {stats.nodes} interlinked guides.
             </p>
             <p className="cta-row">
               <a className="btn btn-primary" href="#join">
                 Join the UK list
               </a>
-              <a className="btn btn-ghost" href="#proof">
-                See the proof frame
-              </a>
+              <Link className="btn btn-ghost" href="/map">
+                Open the living map
+              </Link>
             </p>
           </header>
 
@@ -42,60 +43,66 @@ export default function Home() {
           </figure>
         </section>
 
-        <section
-          className="band band-alt"
-          id="tracks"
-          aria-labelledby="tracks-title"
-        >
-          <p className="kicker">Pattern interrupt · Core tracks</p>
-          <h2 id="tracks-title">Three lanes. Zero meme fog.</h2>
+        <section className="band band-alt" id="pillars" aria-labelledby="pillars-title">
+          <p className="kicker">Three pillars of success</p>
+          <h2 id="pillars-title">Clarity. Safety. Belonging.</h2>
           <p>
-            Everything here is meant to be skimmed in under three seconds, then
-            acted on — no filler paragraphs.
+            Why this works: each pillar maps to a real psychological need —
+            competence, control, and identity — then cross-links so curiosity
+            never hits a dead end.
           </p>
           <section className="service-grid">
-            <article>
-              <p className="benchmark">Value benchmark</p>
-              <h3>Explainers</h3>
-              <p>
-                How DOGE works in plain English — wallets, fees, and what “to
-                the moon” actually means in practice.
-              </p>
-            </article>
-            <article>
-              <p className="benchmark">Value benchmark</p>
-              <h3>UK safety</h3>
-              <p>
-                Phishing patterns, custody basics, and checklists that keep
-                newcomers from expensive mistakes.
-              </p>
-            </article>
-            <article>
-              <p className="benchmark">Value benchmark</p>
-              <h3>Community pulse</h3>
-              <p>
-                Builder notes and UK meetups energy — without pretending this is
-                financial advice.
-              </p>
-            </article>
+            {(Object.keys(PILLARS) as Array<keyof typeof PILLARS>).map((key) => {
+              const pillar = PILLARS[key];
+              const count = getPagesByPillar(key).length;
+              return (
+                <article key={key}>
+                  <p className="benchmark">Value benchmark</p>
+                  <h3>
+                    <Link href={pillar.href}>{pillar.title}</Link>
+                  </h3>
+                  <p>
+                    {pillar.promise}. Lever: {pillar.lever}. {count} guides in
+                    this wing.
+                  </p>
+                </article>
+              );
+            })}
           </section>
         </section>
 
-        <section className="band" id="status" aria-labelledby="status-title">
+        <section className="band" id="hubs" aria-labelledby="hubs-title">
+          <p className="kicker">Graph entry doors</p>
+          <h2 id="hubs-title">Start at a hub. Wander by design.</h2>
+          <p>
+            Hubs are high-gravity pages. Every outbound link is a curiosity
+            bridge into the wider conglomerate.
+          </p>
+          <ul className="hub-list">
+            {hubs.map((page) => (
+              <li key={page.slug}>
+                <Link href={`/guide/${page.slug}`}>
+                  <strong>
+                    [{PILLARS[page.pillar].title}] {page.title}
+                  </strong>
+                  <span>{page.hook}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="band band-alt" id="status" aria-labelledby="status-title">
           <p className="kicker">Hyper-targeted asset pipeline</p>
           <h2 id="status-title">Live build signal — light on the wire.</h2>
           <p>
-            Three status layouts. No chart libraries. No layout thrash while
-            numbers tick.
+            {stats.nodes} nodes · {stats.edges} edges · self-growing on a
+            heartbeat expansion loop.
           </p>
           <AssetPipeline />
         </section>
 
-        <section
-          className="band band-alt"
-          id="proof"
-          aria-labelledby="proof-title"
-        >
+        <section className="band" id="proof" aria-labelledby="proof-title">
           <p className="kicker">Skeptic filter · Trust shield</p>
           <h2 id="proof-title">Proof matrix — why this site exists.</h2>
           <p>
@@ -114,9 +121,9 @@ export default function Home() {
               <em>No charts that promise riches</em>
             </li>
             <li>
-              <strong>&lt;2.5s</strong>
-              <span>TTI budget</span>
-              <em>Fast enough for phone thumbs</em>
+              <strong>{stats.nodes}</strong>
+              <span>Guide pages</span>
+              <em>Surface area for search + curiosity</em>
             </li>
             <li>
               <strong>Unofficial</strong>
@@ -124,9 +131,14 @@ export default function Home() {
               <em>Not the Dogecoin Foundation</em>
             </li>
           </ul>
+          <p className="cta-row" style={{ marginTop: "1.25rem" }}>
+            <Link className="btn btn-ghost" href="/guide/proof-matrix">
+              Read the full proof page
+            </Link>
+          </p>
         </section>
 
-        <section className="band" id="join" aria-labelledby="join-title">
+        <section className="band band-alt" id="join" aria-labelledby="join-title">
           <p className="kicker">Two-step frictionless funnel</p>
           <h2 id="join-title">Say what you want. See if we are live.</h2>
           <p>
@@ -137,15 +149,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="shell site-footer">
-        <p>
-          <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial
-        </p>
-        <p className="audit" aria-label="Velocity-check performance audit targets">
-          Audit · TTI &lt;2.5s · CLS &lt;0.1 · Semantic DOM · CTA: #join
-        </p>
-        <p>© {new Date().getFullYear()}</p>
-      </footer>
+      <SiteFooter />
     </>
   );
 }
