@@ -222,7 +222,8 @@ export const catalog: PageNode[] = [
       "why-uk-domain",
       "what-is-dogecoin",
     
-      "tipping-culture",],
+      "tipping-culture",
+      "meme-literacy",],
     body: [
       "Dogecoin culture rewards tipping, charity bits, and not taking yourself too seriously — until money is on the line.",
       "Memes compress belonging. They also compress scams: fake giveaways wear the same costume.",
@@ -621,7 +622,8 @@ export const catalog: PageNode[] = [
       "is-dogecoin-a-joke",
       "uk-community-pulse",
       "fake-giveaways",
-    ],
+    
+      "meme-literacy",],
     body: [
       "Much wow / such scarce / very currency: playful broken English from early meme format. Affectionate, not illiteracy.",
       "To the moon: aspiration slang. Not a schedule.",
@@ -729,7 +731,8 @@ export const catalog: PageNode[] = [
       "exchange-vs-wallet",
       "first-doge-checklist",
     
-      "multisig-basics",],
+      "multisig-basics",
+      "cold-storage-tiers",],
     body: [
       "Hardware wallets keep keys offline for most signing flows. That reduces malware risk for larger balances.",
       "They do not fix bad habits: phishing sites, photographed seeds, or blind trust in ‘setup helpers.’",
@@ -898,7 +901,8 @@ export const catalog: PageNode[] = [
       "hardware-wallets",
       "common-mistakes",
       "wallets-explained",
-    ],
+    
+      "cold-storage-tiers",],
     body: [
       "Paper backups: when they help and how they fail. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
@@ -1132,6 +1136,48 @@ export const catalog: PageNode[] = [
     ],
     body: [
       "Keeping UK spaces kind without becoming a cult. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "cold-storage-tiers",
+    title: "Cold storage tiers",
+    pillar: "safety",
+    summary: "Match custody tier to amount and life chaos.",
+    hook: "Not everything needs a vault. Some things do.",
+    tags: ["custody", "tiers"],
+    related: [
+      "hardware-wallets",
+      "paper-wallets",
+      "self-custody-checklist",
+      "exchange-vs-wallet",
+      "first-doge-checklist",
+    ],
+    body: [
+      "Match custody tier to amount and life chaos. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "meme-literacy",
+    title: "Meme literacy",
+    pillar: "belonging",
+    summary: "Reading jokes so you do not fund them blindly.",
+    hook: "Laughter is onboarding — and camouflage.",
+    tags: ["culture", "literacy"],
+    related: [
+      "culture-and-memes",
+      "much-wow-lexicon",
+      "fake-giveaways",
+      "is-dogecoin-a-joke",
+      "tipping-culture",
+    ],
+    body: [
+      "Reading jokes so you do not fund them blindly. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
