@@ -22,7 +22,8 @@ export const catalog: PageNode[] = [
     
       "tipping-culture",
       "dogecoin-history",
-      "forks-and-clones",],
+      "forks-and-clones",
+      "uk-search-intent",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -112,7 +113,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
     
       "hardware-wallets",
-      "mobile-wallet-hygiene",],
+      "mobile-wallet-hygiene",
+      "open-source-trust",],
     body: [
       "An exchange wallet is convenient and fragile: the company holds the keys. Fine for tiny experiments; poor as a life vault.",
       "A self-custody wallet puts responsibility on you. That is freedom and liability in the same box.",
@@ -246,7 +248,8 @@ export const catalog: PageNode[] = [
       "what-is-dogecoin",
       "phishing-red-flags",
       "first-doge-checklist",
-    ],
+    
+      "uk-search-intent",],
     body: [
       "dogecoin.co.uk is an unofficial community presence. It is not the Dogecoin Foundation and not a financial adviser.",
       "The `.co.uk` signal answers a psychological need: ‘is there a local, sane explanation?’ Yes — start here.",
@@ -312,7 +315,8 @@ export const catalog: PageNode[] = [
       "fake-giveaways",
       "support-impersonation",
       "address-hygiene",
-    ],
+    
+      "onboarding-a-friend",],
     body: [
       "Nobody legitimate needs your seed phrase. Not support. Not a ‘sync’ page. Not a DM.",
       "Lookalike domains, fake wallet connect prompts, and ‘verification’ deadlines are industrial-scale traps.",
@@ -426,7 +430,9 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "what-is-dogecoin",
     
-      "volatility-psychology",],
+      "volatility-psychology",
+      "onboarding-a-friend",
+      "stable-habits",],
     body: [
       "Write your goal in one sentence: learn, tip, long curiosity, or something else. Goals prevent FOMO shopping.",
       "Fund only what you can emotionally delete. Then practice a receive, a send, and a backup restore.",
@@ -493,7 +499,8 @@ export const catalog: PageNode[] = [
       "wallets-explained",
       "self-custody-checklist",
     
-      "test-transactions",],
+      "test-transactions",
+      "dust-and-spam",],
     body: [
       "Malware can swap addresses on your clipboard. Verify on the device screen, not only in your head.",
       "Save known addresses with labels. Prefer QR for in-person where possible.",
@@ -842,7 +849,8 @@ export const catalog: PageNode[] = [
       "support-impersonation",
       "self-custody-checklist",
       "common-mistakes",
-    ],
+    
+      "stable-habits",],
     body: [
       "Unique passwords. A manager. App-based or hardware 2FA over SMS when you can.",
       "SIM-swap is a UK-relevant threat. SMS 2FA is better than nothing and worse than app 2FA.",
@@ -863,7 +871,8 @@ export const catalog: PageNode[] = [
       "address-hygiene",
       "fees-and-speed",
       "common-mistakes",
-    ],
+    
+      "dust-and-spam",],
     body: [
       "Paste a txid into a reputable explorer. Confirm amount, addresses, and confirmation count.",
       "Never trust a cropped image from a stranger as proof of payment.",
@@ -1011,7 +1020,8 @@ export const catalog: PageNode[] = [
       "reading-block-explorers",
       "what-is-dogecoin",
       "confirmations-explained",
-    ],
+    
+      "open-source-trust",],
     body: [
       "What running software for the network actually means. This page exists so the graph has another door for that intent.",
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
@@ -1225,6 +1235,111 @@ export const catalog: PageNode[] = [
     body: [
       "Harsh topic, practical notes for shared reality. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "onboarding-a-friend",
+    title: "Onboarding a friend",
+    pillar: "belonging",
+    summary: "Teach DOGE without dunking or dumping risk on them.",
+    hook: "The best flex is someone else staying safe.",
+    tags: ["community", "teaching"],
+    related: [
+      "first-doge-checklist",
+      "phishing-red-flags",
+      "what-is-dogecoin",
+      "meetups-and-irl",
+      "tipping-culture",
+    ],
+    body: [
+      "Teach DOGE without dunking or dumping risk on them. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "stable-habits",
+    title: "Stable habits",
+    pillar: "safety",
+    summary: "Daily/weekly rituals that reduce unforced errors.",
+    hook: "Discipline is a safety feature.",
+    tags: ["habits", "checklist"],
+    related: [
+      "first-doge-checklist",
+      "password-and-2fa",
+      "address-hygiene",
+      "volatility-psychology",
+      "common-mistakes",
+    ],
+    body: [
+      "Daily/weekly rituals that reduce unforced errors. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "open-source-trust",
+    title: "Open source trust",
+    pillar: "clarity",
+    summary: "How to think about software trust without becoming a auditor cosplay.",
+    hook: "Verify what you can. Contain what you cannot.",
+    tags: ["software", "trust"],
+    related: [
+      "wallets-explained",
+      "nodes-and-clients",
+      "phishing-red-flags",
+      "self-custody-checklist",
+      "proof-matrix",
+    ],
+    body: [
+      "How to think about software trust without becoming a auditor cosplay. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "uk-search-intent",
+    title: "UK search intent",
+    pillar: "belonging",
+    summary: "Why people type dogecoin.co.uk — and how we answer.",
+    hook: "The query is an emotion with keywords.",
+    tags: ["uk", "seo", "psychology"],
+    related: [
+      "why-uk-domain",
+      "what-is-dogecoin",
+      "phishing-red-flags",
+      "join-the-list",
+      "proof-matrix",
+    ],
+    body: [
+      "Why people type dogecoin.co.uk — and how we answer. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "dust-and-spam",
+    title: "Dust and spam",
+    pillar: "clarity",
+    summary: "Tiny unexpected amounts and why they appear.",
+    hook: "Not every surprise is a gift.",
+    tags: ["network", "privacy"],
+    related: [
+      "address-hygiene",
+      "reading-block-explorers",
+      "phishing-red-flags",
+      "wallets-explained",
+      "common-mistakes",
+    ],
+    body: [
+      "Tiny unexpected amounts and why they appear. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
     ],
