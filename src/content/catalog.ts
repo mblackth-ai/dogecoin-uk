@@ -135,7 +135,8 @@ export const catalog: PageNode[] = [
       "common-mistakes",
     
       "liquidity-basics",
-      "test-transactions",],
+      "test-transactions",
+      "network-congestion",],
     body: [
       "Network fees buy priority. During quiet periods they are negligible. During chaos, patience beats panic.",
       "Confirmation time is not ‘instant like Apple Pay.’ Plan for minutes, not milliseconds, when it matters.",
@@ -356,7 +357,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
     
       "paper-wallets",
-      "mobile-wallet-hygiene",],
+      "mobile-wallet-hygiene",
+      "family-and-inheritance",],
     body: [
       "A seed phrase recreates your wallet. Treat it like the deed to a house written on paper.",
       "Write it offline. Store it where thieves and flatmates can’t casually find it. Consider metal backups for serious amounts.",
@@ -379,7 +381,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
     
       "paper-wallets",
-      "multisig-basics",],
+      "multisig-basics",
+      "family-and-inheritance",],
     body: [
       "Download wallets from official sources you typed yourself. Verify you’re not in an app-store clone.",
       "Back up the seed before you fund the wallet. Test recovery on a spare device with dust amounts.",
@@ -753,7 +756,8 @@ export const catalog: PageNode[] = [
       "address-hygiene",
       "first-doge-checklist",
       "common-mistakes",
-    ],
+    
+      "network-congestion",],
     body: [
       "Each new block buried on top of your transaction makes reversal harder.",
       "Coffee-money and house-money deserve different patience. Match confirmation depth to consequence.",
@@ -1179,6 +1183,48 @@ export const catalog: PageNode[] = [
     body: [
       "Reading jokes so you do not fund them blindly. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "network-congestion",
+    title: "Network congestion",
+    pillar: "clarity",
+    summary: "What busy moments feel like and how to respond.",
+    hook: "Patience is a fee strategy.",
+    tags: ["fees", "network"],
+    related: [
+      "fees-and-speed",
+      "confirmations-explained",
+      "how-dogecoin-works",
+      "reading-block-explorers",
+      "common-mistakes",
+    ],
+    body: [
+      "What busy moments feel like and how to respond. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "family-and-inheritance",
+    title: "Family and inheritance",
+    pillar: "safety",
+    summary: "Harsh topic, practical notes for shared reality.",
+    hook: "Secrets that die with you are not a plan.",
+    tags: ["custody", "life"],
+    related: [
+      "seed-phrases",
+      "self-custody-checklist",
+      "multisig-basics",
+      "hardware-wallets",
+      "not-financial-advice",
+    ],
+    body: [
+      "Harsh topic, practical notes for shared reality. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
     ],
