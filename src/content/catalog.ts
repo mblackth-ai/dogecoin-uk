@@ -44,7 +44,8 @@ export const catalog: PageNode[] = [
       "seed-phrases",
     
       "confirmations-explained",
-      "reading-block-explorers",],
+      "reading-block-explorers",
+      "nodes-and-clients",],
     body: [
       "Dogecoin transactions are messages broadcast to a peer-to-peer network. Miners (and the wider network) race to order those messages into blocks.",
       "Your wallet does not ‘store coins like a purse.’ It stores keys that prove you can move balances recorded on the public ledger.",
@@ -108,7 +109,8 @@ export const catalog: PageNode[] = [
       "how-dogecoin-works",
       "first-doge-checklist",
     
-      "hardware-wallets",],
+      "hardware-wallets",
+      "mobile-wallet-hygiene",],
     body: [
       "An exchange wallet is convenient and fragile: the company holds the keys. Fine for tiny experiments; poor as a life vault.",
       "A self-custody wallet puts responsibility on you. That is freedom and liability in the same box.",
@@ -151,7 +153,8 @@ export const catalog: PageNode[] = [
       "dogecoin-vs-bitcoin",
       "what-is-dogecoin",
       "myths-to-ignore",
-    ],
+    
+      "nodes-and-clients",],
     body: [
       "Miners expend energy to propose blocks. The network’s rules decide which history wins.",
       "Mining does not guarantee your personal OPSEC. It secures consensus, not your seed phrase hygiene.",
@@ -346,7 +349,8 @@ export const catalog: PageNode[] = [
       "common-mistakes",
       "first-doge-checklist",
     
-      "paper-wallets",],
+      "paper-wallets",
+      "mobile-wallet-hygiene",],
     body: [
       "A seed phrase recreates your wallet. Treat it like the deed to a house written on paper.",
       "Write it offline. Store it where thieves and flatmates can’t casually find it. Consider metal backups for serious amounts.",
@@ -412,7 +416,8 @@ export const catalog: PageNode[] = [
       "fees-and-speed",
       "phishing-red-flags",
       "what-is-dogecoin",
-    ],
+    
+      "volatility-psychology",],
     body: [
       "Write your goal in one sentence: learn, tip, long curiosity, or something else. Goals prevent FOMO shopping.",
       "Fund only what you can emotionally delete. Then practice a receive, a send, and a backup restore.",
@@ -455,7 +460,8 @@ export const catalog: PageNode[] = [
       "fake-giveaways",
       "fees-and-speed",
       "first-doge-checklist",
-    ],
+    
+      "volatility-psychology",],
     body: [
       "Sending to the wrong chain or address. Always verify the first and last characters slowly.",
       "Screenshotting seed phrases into camera rolls that sync to the cloud.",
@@ -497,7 +503,8 @@ export const catalog: PageNode[] = [
       "support-impersonation",
       "culture-and-memes",
       "if-you-got-scammed",
-    ],
+    
+      "charity-and-causes",],
     body: [
       "Celebrity-face giveaways are industrial fraud. The real person is not in the replies.",
       "‘Send 10 get 20’ is not generosity — it’s a funnel.",
@@ -690,7 +697,8 @@ export const catalog: PageNode[] = [
       "much-wow-lexicon",
       "phishing-red-flags",
       "uk-community-pulse",
-    ],
+    
+      "charity-and-causes",],
     body: [
       "Dogecoin’s tip culture taught a generation that micro-generosity can be playful.",
       "Scammers copy the warmth and add a payment demand. Real tips never require you to send first to a stranger’s ‘matching’ address.",
@@ -926,6 +934,90 @@ export const catalog: PageNode[] = [
     body: [
       "Why the price you see is not always the price you get. This page exists so the graph has another door for that intent.",
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "volatility-psychology",
+    title: "Volatility psychology",
+    pillar: "belonging",
+    summary: "How fear and euphoria hijack good procedures.",
+    hook: "Your nervous system is part of the stack.",
+    tags: ["psychology", "culture"],
+    related: [
+      "first-doge-checklist",
+      "common-mistakes",
+      "not-financial-advice",
+      "why-people-buy-doge",
+      "social-engineering",
+    ],
+    body: [
+      "How fear and euphoria hijack good procedures. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "charity-and-causes",
+    title: "Charity and causes",
+    pillar: "belonging",
+    summary: "DOGE charity energy — verify before you donate.",
+    hook: "Kindness attracts counterfeits.",
+    tags: ["culture", "trust"],
+    related: [
+      "tipping-culture",
+      "fake-giveaways",
+      "phishing-red-flags",
+      "culture-and-memes",
+      "uk-community-pulse",
+    ],
+    body: [
+      "DOGE charity energy — verify before you donate. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "nodes-and-clients",
+    title: "Nodes and clients",
+    pillar: "clarity",
+    summary: "What running software for the network actually means.",
+    hook: "Participation has layers.",
+    tags: ["network", "software"],
+    related: [
+      "how-dogecoin-works",
+      "mining-and-security",
+      "reading-block-explorers",
+      "what-is-dogecoin",
+      "confirmations-explained",
+    ],
+    body: [
+      "What running software for the network actually means. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "mobile-wallet-hygiene",
+    title: "Mobile wallet hygiene",
+    pillar: "safety",
+    summary: "Phones are convenient attack surfaces.",
+    hook: "Your pocket computer is a fortress only if you treat it like one.",
+    tags: ["mobile", "opsec"],
+    related: [
+      "wallets-explained",
+      "seed-phrases",
+      "phishing-red-flags",
+      "password-and-2fa",
+      "self-custody-checklist",
+    ],
+    body: [
+      "Phones are convenient attack surfaces. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
     ],
