@@ -172,5 +172,825 @@ module.exports = {
         ["join-the-list", "creators-and-builders"],
       ],
     },
+{
+  "id": "pass-04",
+  "pages": [
+    {
+      "slug": "paper-wallets",
+      "title": "Paper wallets",
+      "pillar": "safety",
+      "summary": "Paper backups: when they help and how they fail.",
+      "hook": "Analog is not automatically safe.",
+      "tags": [
+        "custody",
+        "backup"
+      ],
+      "related": [
+        "seed-phrases",
+        "self-custody-checklist",
+        "hardware-wallets",
+        "common-mistakes",
+        "wallets-explained"
+      ],
+      "body": [
+        "Paper backups: when they help and how they fail. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "seed-phrases",
+      "paper-wallets"
+    ],
+    [
+      "self-custody-checklist",
+      "paper-wallets"
+    ]
+  ]
+},
+{
+  "id": "pass-05",
+  "pages": [
+    {
+      "slug": "multisig-basics",
+      "title": "Multisig basics",
+      "pillar": "safety",
+      "summary": "Shared control without shared chaos.",
+      "hook": "One key is a single story.",
+      "tags": [
+        "custody",
+        "advanced"
+      ],
+      "related": [
+        "self-custody-checklist",
+        "hardware-wallets",
+        "seed-phrases",
+        "wallets-explained",
+        "exchange-vs-wallet"
+      ],
+      "body": [
+        "Shared control without shared chaos. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "self-custody-checklist",
+      "multisig-basics"
+    ],
+    [
+      "hardware-wallets",
+      "multisig-basics"
+    ]
+  ]
+},
+{
+  "id": "pass-06",
+  "pages": [
+    {
+      "slug": "liquidity-basics",
+      "title": "Liquidity basics",
+      "pillar": "clarity",
+      "summary": "Why the price you see is not always the price you get.",
+      "hook": "Screens lie politely.",
+      "tags": [
+        "markets",
+        "basics"
+      ],
+      "related": [
+        "uk-buying-basics",
+        "fees-and-speed",
+        "not-financial-advice",
+        "common-mistakes",
+        "why-people-buy-doge"
+      ],
+      "body": [
+        "Why the price you see is not always the price you get. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "uk-buying-basics",
+      "liquidity-basics"
+    ],
+    [
+      "fees-and-speed",
+      "liquidity-basics"
+    ]
+  ]
+},
+{
+  "id": "pass-07",
+  "pages": [
+    {
+      "slug": "volatility-psychology",
+      "title": "Volatility psychology",
+      "pillar": "belonging",
+      "summary": "How fear and euphoria hijack good procedures.",
+      "hook": "Your nervous system is part of the stack.",
+      "tags": [
+        "psychology",
+        "culture"
+      ],
+      "related": [
+        "first-doge-checklist",
+        "common-mistakes",
+        "not-financial-advice",
+        "why-people-buy-doge",
+        "social-engineering"
+      ],
+      "body": [
+        "How fear and euphoria hijack good procedures. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "first-doge-checklist",
+      "volatility-psychology"
+    ],
+    [
+      "common-mistakes",
+      "volatility-psychology"
+    ]
+  ]
+},
+{
+  "id": "pass-08",
+  "pages": [
+    {
+      "slug": "charity-and-causes",
+      "title": "Charity and causes",
+      "pillar": "belonging",
+      "summary": "DOGE charity energy — verify before you donate.",
+      "hook": "Kindness attracts counterfeits.",
+      "tags": [
+        "culture",
+        "trust"
+      ],
+      "related": [
+        "tipping-culture",
+        "fake-giveaways",
+        "phishing-red-flags",
+        "culture-and-memes",
+        "uk-community-pulse"
+      ],
+      "body": [
+        "DOGE charity energy — verify before you donate. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "tipping-culture",
+      "charity-and-causes"
+    ],
+    [
+      "fake-giveaways",
+      "charity-and-causes"
+    ]
+  ]
+},
+{
+  "id": "pass-09",
+  "pages": [
+    {
+      "slug": "nodes-and-clients",
+      "title": "Nodes and clients",
+      "pillar": "clarity",
+      "summary": "What running software for the network actually means.",
+      "hook": "Participation has layers.",
+      "tags": [
+        "network",
+        "software"
+      ],
+      "related": [
+        "how-dogecoin-works",
+        "mining-and-security",
+        "reading-block-explorers",
+        "what-is-dogecoin",
+        "confirmations-explained"
+      ],
+      "body": [
+        "What running software for the network actually means. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "how-dogecoin-works",
+      "nodes-and-clients"
+    ],
+    [
+      "mining-and-security",
+      "nodes-and-clients"
+    ]
+  ]
+},
+{
+  "id": "pass-10",
+  "pages": [
+    {
+      "slug": "mobile-wallet-hygiene",
+      "title": "Mobile wallet hygiene",
+      "pillar": "safety",
+      "summary": "Phones are convenient attack surfaces.",
+      "hook": "Your pocket computer is a fortress only if you treat it like one.",
+      "tags": [
+        "mobile",
+        "opsec"
+      ],
+      "related": [
+        "wallets-explained",
+        "seed-phrases",
+        "phishing-red-flags",
+        "password-and-2fa",
+        "self-custody-checklist"
+      ],
+      "body": [
+        "Phones are convenient attack surfaces. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "wallets-explained",
+      "mobile-wallet-hygiene"
+    ],
+    [
+      "seed-phrases",
+      "mobile-wallet-hygiene"
+    ]
+  ]
+},
+{
+  "id": "pass-11",
+  "pages": [
+    {
+      "slug": "uk-tax-mindset",
+      "title": "UK tax mindset",
+      "pillar": "clarity",
+      "summary": "Record-keeping mindset — not advice, just future-you kindness.",
+      "hook": "HMRC does not accept vibes.",
+      "tags": [
+        "uk",
+        "records"
+      ],
+      "related": [
+        "uk-buying-basics",
+        "not-financial-advice",
+        "exchange-vs-wallet",
+        "first-doge-checklist",
+        "why-uk-domain"
+      ],
+      "body": [
+        "Record-keeping mindset — not advice, just future-you kindness. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "uk-buying-basics",
+      "uk-tax-mindset"
+    ],
+    [
+      "not-financial-advice",
+      "uk-tax-mindset"
+    ]
+  ]
+},
+{
+  "id": "pass-12",
+  "pages": [
+    {
+      "slug": "influencer-disclosures",
+      "title": "Influencer disclosures",
+      "pillar": "belonging",
+      "summary": "How to read paid enthusiasm without becoming the exit liquidity.",
+      "hook": "Charisma is not due diligence.",
+      "tags": [
+        "culture",
+        "media"
+      ],
+      "related": [
+        "why-people-buy-doge",
+        "not-financial-advice",
+        "social-engineering",
+        "fake-giveaways",
+        "proof-matrix"
+      ],
+      "body": [
+        "How to read paid enthusiasm without becoming the exit liquidity. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "why-people-buy-doge",
+      "influencer-disclosures"
+    ],
+    [
+      "not-financial-advice",
+      "influencer-disclosures"
+    ]
+  ]
+},
+{
+  "id": "pass-13",
+  "pages": [
+    {
+      "slug": "test-transactions",
+      "title": "Test transactions",
+      "pillar": "safety",
+      "summary": "The tiny send that prevents the huge regret.",
+      "hook": "Ritual beats bravado.",
+      "tags": [
+        "checklist",
+        "opsec"
+      ],
+      "related": [
+        "address-hygiene",
+        "fees-and-speed",
+        "first-doge-checklist",
+        "common-mistakes",
+        "confirmations-explained"
+      ],
+      "body": [
+        "The tiny send that prevents the huge regret. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "address-hygiene",
+      "test-transactions"
+    ],
+    [
+      "fees-and-speed",
+      "test-transactions"
+    ]
+  ]
+},
+{
+  "id": "pass-14",
+  "pages": [
+    {
+      "slug": "forks-and-clones",
+      "title": "Forks and clones",
+      "pillar": "clarity",
+      "summary": "Lookalike coins and why names are not destiny.",
+      "hook": "Branding is cheap. Networks are not.",
+      "tags": [
+        "basics",
+        "risk"
+      ],
+      "related": [
+        "what-is-dogecoin",
+        "dogecoin-vs-bitcoin",
+        "phishing-red-flags",
+        "myths-to-ignore",
+        "doge-glossary"
+      ],
+      "body": [
+        "Lookalike coins and why names are not destiny. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "what-is-dogecoin",
+      "forks-and-clones"
+    ],
+    [
+      "dogecoin-vs-bitcoin",
+      "forks-and-clones"
+    ]
+  ]
+},
+{
+  "id": "pass-15",
+  "pages": [
+    {
+      "slug": "community-moderation",
+      "title": "Community moderation",
+      "pillar": "belonging",
+      "summary": "Keeping UK spaces kind without becoming a cult.",
+      "hook": "Boundaries are hospitality.",
+      "tags": [
+        "community",
+        "uk"
+      ],
+      "related": [
+        "uk-community-pulse",
+        "meetups-and-irl",
+        "phishing-red-flags",
+        "unofficial-disclaimer",
+        "creators-and-builders"
+      ],
+      "body": [
+        "Keeping UK spaces kind without becoming a cult. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "uk-community-pulse",
+      "community-moderation"
+    ],
+    [
+      "meetups-and-irl",
+      "community-moderation"
+    ]
+  ]
+},
+{
+  "id": "pass-16",
+  "pages": [
+    {
+      "slug": "cold-storage-tiers",
+      "title": "Cold storage tiers",
+      "pillar": "safety",
+      "summary": "Match custody tier to amount and life chaos.",
+      "hook": "Not everything needs a vault. Some things do.",
+      "tags": [
+        "custody",
+        "tiers"
+      ],
+      "related": [
+        "hardware-wallets",
+        "paper-wallets",
+        "self-custody-checklist",
+        "exchange-vs-wallet",
+        "first-doge-checklist"
+      ],
+      "body": [
+        "Match custody tier to amount and life chaos. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "hardware-wallets",
+      "cold-storage-tiers"
+    ],
+    [
+      "paper-wallets",
+      "cold-storage-tiers"
+    ]
+  ]
+},
+{
+  "id": "pass-17",
+  "pages": [
+    {
+      "slug": "meme-literacy",
+      "title": "Meme literacy",
+      "pillar": "belonging",
+      "summary": "Reading jokes so you do not fund them blindly.",
+      "hook": "Laughter is onboarding — and camouflage.",
+      "tags": [
+        "culture",
+        "literacy"
+      ],
+      "related": [
+        "culture-and-memes",
+        "much-wow-lexicon",
+        "fake-giveaways",
+        "is-dogecoin-a-joke",
+        "tipping-culture"
+      ],
+      "body": [
+        "Reading jokes so you do not fund them blindly. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "culture-and-memes",
+      "meme-literacy"
+    ],
+    [
+      "much-wow-lexicon",
+      "meme-literacy"
+    ]
+  ]
+},
+{
+  "id": "pass-18",
+  "pages": [
+    {
+      "slug": "network-congestion",
+      "title": "Network congestion",
+      "pillar": "clarity",
+      "summary": "What busy moments feel like and how to respond.",
+      "hook": "Patience is a fee strategy.",
+      "tags": [
+        "fees",
+        "network"
+      ],
+      "related": [
+        "fees-and-speed",
+        "confirmations-explained",
+        "how-dogecoin-works",
+        "reading-block-explorers",
+        "common-mistakes"
+      ],
+      "body": [
+        "What busy moments feel like and how to respond. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "fees-and-speed",
+      "network-congestion"
+    ],
+    [
+      "confirmations-explained",
+      "network-congestion"
+    ]
+  ]
+},
+{
+  "id": "pass-19",
+  "pages": [
+    {
+      "slug": "family-and-inheritance",
+      "title": "Family and inheritance",
+      "pillar": "safety",
+      "summary": "Harsh topic, practical notes for shared reality.",
+      "hook": "Secrets that die with you are not a plan.",
+      "tags": [
+        "custody",
+        "life"
+      ],
+      "related": [
+        "seed-phrases",
+        "self-custody-checklist",
+        "multisig-basics",
+        "hardware-wallets",
+        "not-financial-advice"
+      ],
+      "body": [
+        "Harsh topic, practical notes for shared reality. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "seed-phrases",
+      "family-and-inheritance"
+    ],
+    [
+      "self-custody-checklist",
+      "family-and-inheritance"
+    ]
+  ]
+},
+{
+  "id": "pass-20",
+  "pages": [
+    {
+      "slug": "onboarding-a-friend",
+      "title": "Onboarding a friend",
+      "pillar": "belonging",
+      "summary": "Teach DOGE without dunking or dumping risk on them.",
+      "hook": "The best flex is someone else staying safe.",
+      "tags": [
+        "community",
+        "teaching"
+      ],
+      "related": [
+        "first-doge-checklist",
+        "phishing-red-flags",
+        "what-is-dogecoin",
+        "meetups-and-irl",
+        "tipping-culture"
+      ],
+      "body": [
+        "Teach DOGE without dunking or dumping risk on them. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "first-doge-checklist",
+      "onboarding-a-friend"
+    ],
+    [
+      "phishing-red-flags",
+      "onboarding-a-friend"
+    ]
+  ]
+},
+{
+  "id": "pass-21",
+  "pages": [
+    {
+      "slug": "stable-habits",
+      "title": "Stable habits",
+      "pillar": "safety",
+      "summary": "Daily/weekly rituals that reduce unforced errors.",
+      "hook": "Discipline is a safety feature.",
+      "tags": [
+        "habits",
+        "checklist"
+      ],
+      "related": [
+        "first-doge-checklist",
+        "password-and-2fa",
+        "address-hygiene",
+        "volatility-psychology",
+        "common-mistakes"
+      ],
+      "body": [
+        "Daily/weekly rituals that reduce unforced errors. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: safety. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "first-doge-checklist",
+      "stable-habits"
+    ],
+    [
+      "password-and-2fa",
+      "stable-habits"
+    ]
+  ]
+},
+{
+  "id": "pass-22",
+  "pages": [
+    {
+      "slug": "open-source-trust",
+      "title": "Open source trust",
+      "pillar": "clarity",
+      "summary": "How to think about software trust without becoming a auditor cosplay.",
+      "hook": "Verify what you can. Contain what you cannot.",
+      "tags": [
+        "software",
+        "trust"
+      ],
+      "related": [
+        "wallets-explained",
+        "nodes-and-clients",
+        "phishing-red-flags",
+        "self-custody-checklist",
+        "proof-matrix"
+      ],
+      "body": [
+        "How to think about software trust without becoming a auditor cosplay. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "wallets-explained",
+      "open-source-trust"
+    ],
+    [
+      "nodes-and-clients",
+      "open-source-trust"
+    ]
+  ]
+},
+{
+  "id": "pass-23",
+  "pages": [
+    {
+      "slug": "uk-search-intent",
+      "title": "UK search intent",
+      "pillar": "belonging",
+      "summary": "Why people type dogecoin.co.uk — and how we answer.",
+      "hook": "The query is an emotion with keywords.",
+      "tags": [
+        "uk",
+        "seo",
+        "psychology"
+      ],
+      "related": [
+        "why-uk-domain",
+        "what-is-dogecoin",
+        "phishing-red-flags",
+        "join-the-list",
+        "proof-matrix"
+      ],
+      "body": [
+        "Why people type dogecoin.co.uk — and how we answer. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "why-uk-domain",
+      "uk-search-intent"
+    ],
+    [
+      "what-is-dogecoin",
+      "uk-search-intent"
+    ]
+  ]
+},
+{
+  "id": "pass-24",
+  "pages": [
+    {
+      "slug": "dust-and-spam",
+      "title": "Dust and spam",
+      "pillar": "clarity",
+      "summary": "Tiny unexpected amounts and why they appear.",
+      "hook": "Not every surprise is a gift.",
+      "tags": [
+        "network",
+        "privacy"
+      ],
+      "related": [
+        "address-hygiene",
+        "reading-block-explorers",
+        "phishing-red-flags",
+        "wallets-explained",
+        "common-mistakes"
+      ],
+      "body": [
+        "Tiny unexpected amounts and why they appear. This page exists so the graph has another door for that intent.",
+        "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+        "UK frame: keep procedures boring and verify outside DMs.",
+        "When in doubt, return to the Safety hub before acting."
+      ]
+    }
+  ],
+  "densify": [
+    [
+      "address-hygiene",
+      "dust-and-spam"
+    ],
+    [
+      "reading-block-explorers",
+      "dust-and-spam"
+    ]
+  ]
+}
   ],
 };
