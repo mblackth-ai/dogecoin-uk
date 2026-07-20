@@ -43,7 +43,8 @@ export const catalog: PageNode[] = [
       "mining-and-security",
       "seed-phrases",
     
-      "confirmations-explained",],
+      "confirmations-explained",
+      "reading-block-explorers",],
     body: [
       "Dogecoin transactions are messages broadcast to a peer-to-peer network. Miners (and the wider network) race to order those messages into blocks.",
       "Your wallet does not ‘store coins like a purse.’ It stores keys that prove you can move balances recorded on the public ledger.",
@@ -385,7 +386,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
       "uk-buying-basics",
       "common-mistakes",
-    ],
+    
+      "password-and-2fa",],
     body: [
       "Exchanges are on-ramps. They are also honeypots: large targets with human processes and outages.",
       "Self-custody removes company risk and adds personal responsibility risk. Pick consciously.",
@@ -576,7 +578,8 @@ export const catalog: PageNode[] = [
       "unofficial-disclaimer",
       "join-the-list",
     
-      "meetups-and-irl",],
+      "meetups-and-irl",
+      "creators-and-builders",],
     body: [
       "UK Dogecoin energy tends to be dryer humour, sharper scam awareness, and less carnival barking.",
       "We’ll grow this page with community notes, reading lists, and event pointers as they earn trust.",
@@ -660,7 +663,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
       "phishing-red-flags",
       "proof-matrix",
-    ],
+    
+      "creators-and-builders",],
     body: [
       "Use the home page funnel to request the update stream that matches you: explainers, safety, community, or builders.",
       "We show live UK desk availability so you know whether a human is in-hours.",
@@ -792,6 +796,69 @@ export const catalog: PageNode[] = [
       "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
       "Publish notes afterward so remote UK folks inherit the signal.",
       "Belonging scales when IRL generosity meets online clarity.",
+    ],
+  },
+  {
+    slug: "password-and-2fa",
+    title: "Passwords and 2FA",
+    pillar: "safety",
+    summary: "Exchange hygiene that prevents the boring disasters.",
+    hook: "Most ‘hacks’ are reused passwords with better marketing.",
+    tags: ["opsec", "exchange"],
+    related: [
+      "exchange-vs-wallet",
+      "scam-patterns-uk",
+      "support-impersonation",
+      "self-custody-checklist",
+      "common-mistakes",
+    ],
+    body: [
+      "Unique passwords. A manager. App-based or hardware 2FA over SMS when you can.",
+      "SIM-swap is a UK-relevant threat. SMS 2FA is better than nothing and worse than app 2FA.",
+      "Withdrawal allowlists add friction that saves careers.",
+      "Boring security is elite security.",
+    ],
+  },
+  {
+    slug: "reading-block-explorers",
+    title: "Reading block explorers",
+    pillar: "clarity",
+    summary: "How to verify a send yourself without trusting a screenshot.",
+    hook: "Screenshots lie. Explorers gossip truthfully.",
+    tags: ["tools", "network"],
+    related: [
+      "confirmations-explained",
+      "how-dogecoin-works",
+      "address-hygiene",
+      "fees-and-speed",
+      "common-mistakes",
+    ],
+    body: [
+      "Paste a txid into a reputable explorer. Confirm amount, addresses, and confirmation count.",
+      "Never trust a cropped image from a stranger as proof of payment.",
+      "Learn the difference between ‘broadcast’ and ‘confirmed.’",
+      "Clarity tools turn anxiety into checkable facts.",
+    ],
+  },
+  {
+    slug: "creators-and-builders",
+    title: "Creators and builders",
+    pillar: "belonging",
+    summary: "Making things in the DOGE orbit without extractive hustle energy.",
+    hook: "Build for the pack, not the extract.",
+    tags: ["builders", "community"],
+    related: [
+      "uk-community-pulse",
+      "join-the-list",
+      "culture-and-memes",
+      "why-uk-domain",
+      "proof-matrix",
+    ],
+    body: [
+      "Tools, explainers, art, and meetup ops all count as building.",
+      "Disclose affiliations. Hidden bags plus loud advice is a trust tax.",
+      "Ship useful docs. Memes without manuals strand newcomers.",
+      "UK builders: document in .co.uk English — dry, clear, kind.",
     ],
   },
 ];
