@@ -283,7 +283,9 @@ export const catalog: PageNode[] = [
       "common-mistakes",
       "scam-patterns-uk",
       "first-doge-checklist",
-    ],
+    
+      "uk-tax-mindset",
+      "influencer-disclosures",],
     body: [
       "Nothing on dogecoin.co.uk is financial, tax, or legal advice. Crypto assets can go to zero.",
       "We explain mechanics and risks so you can think. We do not tell you what to do with money.",
@@ -439,7 +441,8 @@ export const catalog: PageNode[] = [
       "common-mistakes",
       "fees-and-speed",
     
-      "liquidity-basics",],
+      "liquidity-basics",
+      "uk-tax-mindset",],
     body: [
       "Use regulated, well-known venues you researched yourself. Avoid ‘too helpful’ strangers with referral urgency.",
       "Expect identity checks. That friction is often a safety feature, not a conspiracy.",
@@ -567,7 +570,8 @@ export const catalog: PageNode[] = [
       "culture-and-memes",
       "inflation-and-supply",
       "what-is-dogecoin",
-    ],
+    
+      "influencer-disclosures",],
     body: [
       "Some buy for the joke. Some for the community. Some for speculation. Some for tipping experiments.",
       "None of those motives require you to pretend it’s risk-free.",
@@ -1018,6 +1022,48 @@ export const catalog: PageNode[] = [
     body: [
       "Phones are convenient attack surfaces. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "uk-tax-mindset",
+    title: "UK tax mindset",
+    pillar: "clarity",
+    summary: "Record-keeping mindset — not advice, just future-you kindness.",
+    hook: "HMRC does not accept vibes.",
+    tags: ["uk", "records"],
+    related: [
+      "uk-buying-basics",
+      "not-financial-advice",
+      "exchange-vs-wallet",
+      "first-doge-checklist",
+      "why-uk-domain",
+    ],
+    body: [
+      "Record-keeping mindset — not advice, just future-you kindness. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "influencer-disclosures",
+    title: "Influencer disclosures",
+    pillar: "belonging",
+    summary: "How to read paid enthusiasm without becoming the exit liquidity.",
+    hook: "Charisma is not due diligence.",
+    tags: ["culture", "media"],
+    related: [
+      "why-people-buy-doge",
+      "not-financial-advice",
+      "social-engineering",
+      "fake-giveaways",
+      "proof-matrix",
+    ],
+    body: [
+      "How to read paid enthusiasm without becoming the exit liquidity. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
     ],
