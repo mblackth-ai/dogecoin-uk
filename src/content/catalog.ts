@@ -129,7 +129,8 @@ export const catalog: PageNode[] = [
       "address-hygiene",
       "wallets-explained",
       "common-mistakes",
-    ],
+    
+      "liquidity-basics",],
     body: [
       "Network fees buy priority. During quiet periods they are negligible. During chaos, patience beats panic.",
       "Confirmation time is not ‘instant like Apple Pay.’ Plan for minutes, not milliseconds, when it matters.",
@@ -344,7 +345,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "common-mistakes",
       "first-doge-checklist",
-    ],
+    
+      "paper-wallets",],
     body: [
       "A seed phrase recreates your wallet. Treat it like the deed to a house written on paper.",
       "Write it offline. Store it where thieves and flatmates can’t casually find it. Consider metal backups for serious amounts.",
@@ -365,7 +367,9 @@ export const catalog: PageNode[] = [
       "exchange-vs-wallet",
       "address-hygiene",
       "first-doge-checklist",
-    ],
+    
+      "paper-wallets",
+      "multisig-basics",],
     body: [
       "Download wallets from official sources you typed yourself. Verify you’re not in an app-store clone.",
       "Back up the seed before you fund the wallet. Test recovery on a spare device with dust amounts.",
@@ -429,7 +433,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "common-mistakes",
       "fees-and-speed",
-    ],
+    
+      "liquidity-basics",],
     body: [
       "Use regulated, well-known venues you researched yourself. Avoid ‘too helpful’ strangers with referral urgency.",
       "Expect identity checks. That friction is often a safety feature, not a conspiracy.",
@@ -706,7 +711,8 @@ export const catalog: PageNode[] = [
       "wallets-explained",
       "exchange-vs-wallet",
       "first-doge-checklist",
-    ],
+    
+      "multisig-basics",],
     body: [
       "Hardware wallets keep keys offline for most signing flows. That reduces malware risk for larger balances.",
       "They do not fix bad habits: phishing sites, photographed seeds, or blind trust in ‘setup helpers.’",
@@ -859,6 +865,69 @@ export const catalog: PageNode[] = [
       "Disclose affiliations. Hidden bags plus loud advice is a trust tax.",
       "Ship useful docs. Memes without manuals strand newcomers.",
       "UK builders: document in .co.uk English — dry, clear, kind.",
+    ],
+  },
+  {
+    slug: "paper-wallets",
+    title: "Paper wallets",
+    pillar: "safety",
+    summary: "Paper backups: when they help and how they fail.",
+    hook: "Analog is not automatically safe.",
+    tags: ["custody", "backup"],
+    related: [
+      "seed-phrases",
+      "self-custody-checklist",
+      "hardware-wallets",
+      "common-mistakes",
+      "wallets-explained",
+    ],
+    body: [
+      "Paper backups: when they help and how they fail. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "multisig-basics",
+    title: "Multisig basics",
+    pillar: "safety",
+    summary: "Shared control without shared chaos.",
+    hook: "One key is a single story.",
+    tags: ["custody", "advanced"],
+    related: [
+      "self-custody-checklist",
+      "hardware-wallets",
+      "seed-phrases",
+      "wallets-explained",
+      "exchange-vs-wallet",
+    ],
+    body: [
+      "Shared control without shared chaos. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "liquidity-basics",
+    title: "Liquidity basics",
+    pillar: "clarity",
+    summary: "Why the price you see is not always the price you get.",
+    hook: "Screens lie politely.",
+    tags: ["markets", "basics"],
+    related: [
+      "uk-buying-basics",
+      "fees-and-speed",
+      "not-financial-advice",
+      "common-mistakes",
+      "why-people-buy-doge",
+    ],
+    body: [
+      "Why the price you see is not always the price you get. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
     ],
   },
 ];
