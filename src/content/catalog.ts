@@ -21,7 +21,8 @@ export const catalog: PageNode[] = [
       "is-dogecoin-a-joke",
     
       "tipping-culture",
-      "dogecoin-history",],
+      "dogecoin-history",
+      "forks-and-clones",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -66,7 +67,8 @@ export const catalog: PageNode[] = [
       "is-dogecoin-a-joke",
       "why-people-buy-doge",
       "culture-and-memes",
-    ],
+    
+      "forks-and-clones",],
     body: [
       "Both are proof-of-work cryptocurrencies. Bitcoin optimises for scarcity narrative and settlement gravity. Dogecoin optimises for approachability and cultural velocity.",
       "Supply design differs. That is not a moral verdict — it is a design choice with trade-offs for fees, miner incentives, and long-term story.",
@@ -132,7 +134,8 @@ export const catalog: PageNode[] = [
       "wallets-explained",
       "common-mistakes",
     
-      "liquidity-basics",],
+      "liquidity-basics",
+      "test-transactions",],
     body: [
       "Network fees buy priority. During quiet periods they are negligible. During chaos, patience beats panic.",
       "Confirmation time is not ‘instant like Apple Pay.’ Plan for minutes, not milliseconds, when it matters.",
@@ -485,7 +488,8 @@ export const catalog: PageNode[] = [
       "fees-and-speed",
       "wallets-explained",
       "self-custody-checklist",
-    ],
+    
+      "test-transactions",],
     body: [
       "Malware can swap addresses on your clipboard. Verify on the device screen, not only in your head.",
       "Save known addresses with labels. Prefer QR for in-person where possible.",
@@ -595,7 +599,8 @@ export const catalog: PageNode[] = [
       "join-the-list",
     
       "meetups-and-irl",
-      "creators-and-builders",],
+      "creators-and-builders",
+      "community-moderation",],
     body: [
       "UK Dogecoin energy tends to be dryer humour, sharper scam awareness, and less carnival barking.",
       "We’ll grow this page with community notes, reading lists, and event pointers as they earn trust.",
@@ -808,7 +813,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
       "why-uk-domain",
       "tipping-culture",
-    ],
+    
+      "community-moderation",],
     body: [
       "Open with a safety five minutes. Normalise seed hygiene talk like you normalise fire exits.",
       "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
@@ -1063,6 +1069,69 @@ export const catalog: PageNode[] = [
     ],
     body: [
       "How to read paid enthusiasm without becoming the exit liquidity. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: belonging. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "test-transactions",
+    title: "Test transactions",
+    pillar: "safety",
+    summary: "The tiny send that prevents the huge regret.",
+    hook: "Ritual beats bravado.",
+    tags: ["checklist", "opsec"],
+    related: [
+      "address-hygiene",
+      "fees-and-speed",
+      "first-doge-checklist",
+      "common-mistakes",
+      "confirmations-explained",
+    ],
+    body: [
+      "The tiny send that prevents the huge regret. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: safety. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "forks-and-clones",
+    title: "Forks and clones",
+    pillar: "clarity",
+    summary: "Lookalike coins and why names are not destiny.",
+    hook: "Branding is cheap. Networks are not.",
+    tags: ["basics", "risk"],
+    related: [
+      "what-is-dogecoin",
+      "dogecoin-vs-bitcoin",
+      "phishing-red-flags",
+      "myths-to-ignore",
+      "doge-glossary",
+    ],
+    body: [
+      "Lookalike coins and why names are not destiny. This page exists so the graph has another door for that intent.",
+      "Pillar alignment: clarity. Read it slowly, then follow two related links.",
+      "UK frame: keep procedures boring and verify outside DMs.",
+      "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "community-moderation",
+    title: "Community moderation",
+    pillar: "belonging",
+    summary: "Keeping UK spaces kind without becoming a cult.",
+    hook: "Boundaries are hospitality.",
+    tags: ["community", "uk"],
+    related: [
+      "uk-community-pulse",
+      "meetups-and-irl",
+      "phishing-red-flags",
+      "unofficial-disclaimer",
+      "creators-and-builders",
+    ],
+    body: [
+      "Keeping UK spaces kind without becoming a cult. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
