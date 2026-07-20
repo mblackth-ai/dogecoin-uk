@@ -20,7 +20,8 @@ export const catalog: PageNode[] = [
       "why-uk-domain",
       "is-dogecoin-a-joke",
     
-      "tipping-culture",],
+      "tipping-culture",
+      "dogecoin-history",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -190,7 +191,8 @@ export const catalog: PageNode[] = [
       "why-people-buy-doge",
       "myths-to-ignore",
       "uk-community-pulse",
-    ],
+    
+      "dogecoin-history",],
     body: [
       "Dogecoin began as satire. That origin is a feature: it lowers the intimidation tax that keeps people out of crypto.",
       "Treating it only as a joke can make you careless. Treating it only as sacred can make you cruel. Aim for warm precision.",
@@ -319,7 +321,8 @@ export const catalog: PageNode[] = [
       "support-impersonation",
       "if-you-got-scammed",
       "self-custody-checklist",
-    ],
+    
+      "social-engineering",],
     body: [
       "Investment scams promise guaranteed returns and a friendly mentor. Guaranteed returns in crypto are fiction.",
       "Recovery scams arrive after the first loss: ‘specialists’ who need fees to unlock funds. That is round two.",
@@ -572,7 +575,8 @@ export const catalog: PageNode[] = [
       "much-wow-lexicon",
       "unofficial-disclaimer",
       "join-the-list",
-    ],
+    
+      "meetups-and-irl",],
     body: [
       "UK Dogecoin energy tends to be dryer humour, sharper scam awareness, and less carnival barking.",
       "We’ll grow this page with community notes, reading lists, and event pointers as they earn trust.",
@@ -725,6 +729,69 @@ export const catalog: PageNode[] = [
       "Coffee-money and house-money deserve different patience. Match confirmation depth to consequence.",
       "Exchanges set their own deposit thresholds. Those rules are risk policies, not cosmic law.",
       "If someone demands you treat an unconfirmed tx as sacred settlement, slow down.",
+    ],
+  },
+  {
+    slug: "social-engineering",
+    title: "Social engineering 101",
+    pillar: "safety",
+    summary: "How trust is hacked without touching code.",
+    hook: "The vulnerability is often kindness.",
+    tags: ["scams", "psychology"],
+    related: [
+      "scam-patterns-uk",
+      "support-impersonation",
+      "phishing-red-flags",
+      "if-you-got-scammed",
+      "fake-giveaways",
+    ],
+    body: [
+      "Social engineering scripts borrow authority, fear, romance, or greed — then ask for a small irreversible step.",
+      "UK phone and WhatsApp vectors are common. Verify through a second channel you initiate.",
+      "Practice saying ‘I’ll call you back on the official number.’ It feels rude. It is adult.",
+      "Safety literacy is emotional literacy under pressure.",
+    ],
+  },
+  {
+    slug: "dogecoin-history",
+    title: "A short Dogecoin history",
+    pillar: "clarity",
+    summary: "From joke fork to cultural fixture — the arc without mythology overload.",
+    hook: "Origin stories explain tone. They do not predict price.",
+    tags: ["history", "culture"],
+    related: [
+      "what-is-dogecoin",
+      "is-dogecoin-a-joke",
+      "culture-and-memes",
+      "dogecoin-vs-bitcoin",
+      "why-uk-domain",
+    ],
+    body: [
+      "Dogecoin launched in 2013 as a light-hearted fork culture experiment and somehow refused to die.",
+      "Attention cycles came in waves. Each wave onboarded new humans and new predators.",
+      "History helps you spot recycled narratives dressed as novelty.",
+      "Read it for orientation, not nostalgia investment thesis cosplay.",
+    ],
+  },
+  {
+    slug: "meetups-and-irl",
+    title: "Meetups and IRL",
+    pillar: "belonging",
+    summary: "How to gather in the UK without turning into a pitch room.",
+    hook: "The best meetup ends with people safer than they arrived.",
+    tags: ["uk", "community", "irl"],
+    related: [
+      "uk-community-pulse",
+      "phishing-red-flags",
+      "first-doge-checklist",
+      "why-uk-domain",
+      "tipping-culture",
+    ],
+    body: [
+      "Open with a safety five minutes. Normalise seed hygiene talk like you normalise fire exits.",
+      "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
+      "Publish notes afterward so remote UK folks inherit the signal.",
+      "Belonging scales when IRL generosity meets online clarity.",
     ],
   },
 ];
