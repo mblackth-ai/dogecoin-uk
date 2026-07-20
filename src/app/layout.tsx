@@ -15,14 +15,14 @@ const body = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dogecoin — dogecoin.co.uk",
+  title: "Dogecoin — UK home for DOGE",
   description:
-    "The UK home for Dogecoin — community, education, and what’s next for DOGE.",
+    "Unofficial UK community site for Dogecoin: plain-English explainers, safety guides, and updates without the circus.",
   metadataBase: new URL("https://dogecoin.co.uk"),
   openGraph: {
     title: "Dogecoin",
     description:
-      "The UK home for Dogecoin — community, education, and what’s next for DOGE.",
+      "Unofficial UK community site for Dogecoin: plain-English explainers, safety guides, and updates without the circus.",
     url: "https://dogecoin.co.uk",
     siteName: "Dogecoin",
     locale: "en_GB",
