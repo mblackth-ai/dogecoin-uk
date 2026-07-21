@@ -24,14 +24,15 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-brand">
           <div className="hero-frame shell">
             <header className="hero-copy">
+              <p className="hero-kicker">Unofficial · Made for Britain</p>
               <p className="hero-brand" id="hero-brand">
                 Dogecoin
               </p>
-              <h1>UK home for DOGE — clear, calm, useful.</h1>
+              <h1>A proper UK home for DOGE — clear, calm, useful.</h1>
               <p className="hero-lede">
-                People land here for belonging, safety, and plain English — not
-                carnival price calls. Browse {stats.nodes} guides across Clarity,
-                Safety, and Belonging.
+                Built for British readers who want belonging, safety, and plain
+                English — not carnival price calls. Browse {stats.nodes} guides
+                across Clarity, Safety, and Belonging.
               </p>
               <p className="cta-row">
                 <a className="btn btn-primary" href="#join">
@@ -43,7 +44,13 @@ export default function Home() {
               </p>
             </header>
 
-            <figure className="hero-visual" aria-label="Stylised Dogecoin disc">
+            <figure
+              className="hero-visual"
+              aria-label="Stylised Dogecoin disc with a faint Union Flag halo"
+            >
+              <span className="hero-flag-halo" aria-hidden="true">
+                <UnionJackHalo />
+              </span>
               <span className="hero-visual-motion">
                 <DogeCoinVisual />
               </span>
@@ -259,6 +266,64 @@ export default function Home() {
 
       <SiteFooter />
     </>
+  );
+}
+
+function UnionJackHalo() {
+  return (
+    <svg viewBox="0 0 520 520" width="520" height="520" overflow="visible">
+      <defs>
+        <clipPath id="flagHaloClip">
+          <circle cx="260" cy="260" r="248" />
+        </clipPath>
+        <radialGradient id="flagFade" cx="50%" cy="50%" r="50%">
+          <stop offset="55%" stopColor="white" stopOpacity="1" />
+          <stop offset="100%" stopColor="white" stopOpacity="0" />
+        </radialGradient>
+        <mask id="flagHaloMask">
+          <rect width="520" height="520" fill="url(#flagFade)" />
+        </mask>
+      </defs>
+      <g clipPath="url(#flagHaloClip)" mask="url(#flagHaloMask)">
+        {/* Soft Union Flag field */}
+        <rect width="520" height="520" fill="#012169" />
+        {/* St Andrew saltire (white) */}
+        <path
+          d="M0 0 L520 520 M520 0 L0 520"
+          stroke="#ffffff"
+          strokeWidth="88"
+          strokeLinecap="square"
+        />
+        {/* St Patrick saltire (red, offset) */}
+        <path
+          d="M0 0 L520 520"
+          stroke="#c8102e"
+          strokeWidth="36"
+          strokeLinecap="square"
+        />
+        <path
+          d="M520 0 L0 520"
+          stroke="#c8102e"
+          strokeWidth="36"
+          strokeLinecap="square"
+        />
+        {/* St George cross */}
+        <rect x="210" y="0" width="100" height="520" fill="#ffffff" />
+        <rect x="0" y="210" width="520" height="100" fill="#ffffff" />
+        <rect x="228" y="0" width="64" height="520" fill="#c8102e" />
+        <rect x="0" y="228" width="520" height="64" fill="#c8102e" />
+      </g>
+      {/* Thin gold ring so the flag reads as a halo, not a badge */}
+      <circle
+        cx="260"
+        cy="260"
+        r="248"
+        fill="none"
+        stroke="#e2b43a"
+        strokeOpacity="0.35"
+        strokeWidth="3"
+      />
+    </svg>
   );
 }
 

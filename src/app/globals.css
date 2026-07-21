@@ -185,6 +185,22 @@ svg {
   max-width: 36rem;
 }
 
+.hero-kicker {
+  margin: 0;
+  font-size: var(--small);
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, #012169 70%, var(--navy));
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-kicker {
+    color: color-mix(in srgb, var(--sky) 55%, var(--gold));
+  }
+}
+
 .hero-brand {
   font-family: var(--font-display), system-ui, sans-serif;
   font-size: var(--display);
@@ -192,7 +208,7 @@ svg {
   letter-spacing: -0.04em;
   line-height: 0.95;
   margin: 0;
-  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.06s both;
 }
 
 .hero h1 {
@@ -202,14 +218,14 @@ svg {
   letter-spacing: -0.03em;
   line-height: 1.12;
   margin: 0;
-  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
 }
 
 .hero-lede {
   margin: 0;
   color: var(--navy-soft);
   max-width: 32rem;
-  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
 }
 
 .cta-row {
@@ -275,11 +291,31 @@ svg {
   }
 }
 
-.hero-visual-motion {
+.hero-flag-halo {
+  position: absolute;
+  inset: -6%;
+  z-index: 0;
   display: grid;
   place-items: center;
+  opacity: 0.2;
+  pointer-events: none;
+  transform-origin: 50% 50%;
+  animation: spin-flag 54s linear infinite;
+  filter: blur(0.4px) saturate(0.92);
+}
+
+.hero-flag-halo svg {
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.hero-visual-motion {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 88%;
+  height: 88%;
   transform-origin: 50% 55%;
   animation: float-coin 6.5s ease-in-out 1.2s infinite;
 }
@@ -716,6 +752,15 @@ svg {
   }
 }
 
+@keyframes spin-flag {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes shimmer {
   0%,
   100% {
@@ -857,24 +902,32 @@ svg {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-brand,
+  .hero-kicker,
   .hero h1,
   .hero-lede,
   .cta-row,
   .hero-visual,
   .hero-visual-motion,
+  .hero-flag-halo,
   .hero::after,
   .live-pill i {
     animation: none;
   }
 
   .hero-brand,
+  .hero-kicker,
   .hero h1,
   .hero-lede,
   .cta-row,
   .hero-visual,
+  .hero-flag-halo,
   .hero::after {
     opacity: 1;
     transform: none;
+  }
+
+  .hero-flag-halo {
+    opacity: 0.16;
   }
 }
 
