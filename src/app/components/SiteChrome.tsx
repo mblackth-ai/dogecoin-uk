@@ -12,6 +12,7 @@ export function SiteHeader() {
         <Link href="/safety">Safety</Link>
         <Link href="/belonging">Belonging</Link>
         <Link href="/map">Guides</Link>
+        <Link href="/niche">Niche</Link>
         <Link href="/#join">Join</Link>
       </nav>
     </header>
@@ -23,7 +24,9 @@ export function SiteFooter() {
   return (
     <footer className="shell site-footer">
       <p>
-        <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial community site
+        <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial community site ·{" "}
+        <Link href="/niche">Niche path</Link> ·{" "}
+        <a href="/llms.txt">llms.txt</a>
       </p>
       <p className="audit" aria-label="Guide library size">
         {stats.nodes} guides · Clarity {stats.byPillar.clarity} · Safety{" "}

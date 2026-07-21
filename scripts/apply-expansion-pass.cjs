@@ -11,7 +11,12 @@ const catalogPath = path.join(root, "src", "content", "catalog.ts");
 const statePath = path.join(__dirname, "expansion-state.json");
 const { batches: batches1 } = require("./expansion-batches.cjs");
 const { batches: batches2 } = require("./expansion-batches-hour2.cjs");
-const batches = [...batches1.filter(Boolean), ...batches2.filter(Boolean)];
+const { batches: batches3 } = require("./expansion-batches-hour3.cjs");
+const batches = [
+  ...batches1.filter(Boolean),
+  ...batches2.filter(Boolean),
+  ...batches3.filter(Boolean),
+];
 
 const state = fs.existsSync(statePath)
   ? JSON.parse(fs.readFileSync(statePath, "utf8"))

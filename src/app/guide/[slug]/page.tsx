@@ -8,6 +8,7 @@ import {
   getRelated,
   PILLARS,
 } from "../../../content";
+import { GuideJsonLd } from "../../components/JsonLd";
 import { RelatedRail, SiteFooter, SiteHeader } from "../../components/SiteChrome";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -20,13 +21,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = getPage(slug);
   if (!page) return { title: "Not found" };
+  const url = `https://dogecoin.co.uk/guide/${page.slug}`;
   return {
-    title: `${page.title} · Dogecoin UK`,
+    title: page.title,
     description: page.summary,
+    keywords: [...page.tags, "dogecoin", "uk", page.pillar],
+    alternates: { canonical: url },
     openGraph: {
       title: page.title,
       description: page.summary,
-      url: `https://dogecoin.co.uk/guide/${page.slug}`,
+      url,
+      type: "article",
+      locale: "en_GB",
+      siteName: "Dogecoin UK",
+    },
+    twitter: {
+      card: "summary",
+      title: page.title,
+      description: page.summary,
     },
   };
 }
@@ -42,6 +54,7 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <>
+      <GuideJsonLd page={page} />
       <SiteHeader />
       <main className="article-main">
         <article className="article shell">
