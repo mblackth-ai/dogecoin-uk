@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, type FormEvent } from "react";
+import { useEffect, useState } from "react";
+
+const DISCORD_INVITE = "https://discord.gg/x5D3gtH3";
+const COMMUNITY_NAME = "The University of Life";
 
 type Availability = {
   open: boolean;
@@ -20,16 +23,46 @@ function londonWindow(): Availability {
   const open = hour >= 10 && hour < 20;
   return {
     open,
-    label: open ? "Community desk open" : "Night queue",
+    label: open ? "Community pulse online" : "Night mode",
     window: open
-      ? "Daily · 10:00–20:00 UK"
-      : "Messages land in the morning inbox",
+      ? "Daily · 10:00–20:00 UK chatter peaks"
+      : "Drop in anytime — threads wait for morning",
   };
 }
 
+const LANES = [
+  {
+    id: "clarity",
+    title: "Clarity",
+    blurb: "Plain-English DOGE — how it works without the jargon.",
+    tag: "Learn DOGE",
+  },
+  {
+    id: "safety",
+    title: "Safety",
+    blurb: "Scams, wallets, seed hygiene — ask before you click.",
+    tag: "Stay safer",
+  },
+  {
+    id: "belonging",
+    title: "Belonging",
+    blurb: "UK pack energy, meetups, culture — company without the hard sell.",
+    tag: "Find people",
+  },
+  {
+    id: "life",
+    title: "Life & investing",
+    blurb:
+      "Wider University of Life rooms — money skills, mindset, and more than crypto alone.",
+    tag: "Go broader",
+  },
+] as const;
+
 export function LeadFunnel() {
-  const [sent, setSent] = useState(false);
-  const [availability, setAvailability] = useState<Availability>(() => londonWindow());
+  const [lane, setLane] = useState<(typeof LANES)[number]["id"]>("life");
+  const [availability, setAvailability] = useState<Availability>(() =>
+    londonWindow(),
+  );
 
   useEffect(() => {
     const tick = () => setAvailability(londonWindow());
@@ -38,64 +71,85 @@ export function LeadFunnel() {
     return () => window.clearInterval(id);
   }, []);
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const name = String(data.get("name") || "").trim();
-    const email = String(data.get("email") || "").trim();
-    const interest = String(data.get("interest") || "").trim();
-    const subject = encodeURIComponent(`Dogecoin.uk — ${interest || "hello"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nI'd like updates from dogecoin.co.uk.`,
-    );
-    window.location.href = `mailto:hello@dogecoin.co.uk?subject=${subject}&body=${body}`;
-    setSent(true);
-  }
+  const chosen = LANES.find((item) => item.id === lane) ?? LANES[3];
+  const discordHref = `${DISCORD_INVITE}?ref=dogecoin-uk-${chosen.id}`;
 
   return (
-    <section className="funnel" aria-label="Join the UK list">
-      <form onSubmit={onSubmit} noValidate>
-        <fieldset>
-          <legend>Your details</legend>
-          <label>
-            Name
-            <input name="name" type="text" autoComplete="name" required placeholder="Your name" />
-          </label>
-          <label>
-            Email
-            <input
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              placeholder="you@email.co.uk"
-            />
-          </label>
-          <label>
-            What you want first
-            <select name="interest" defaultValue="explainers">
-              <option value="explainers">Plain-English DOGE explainers</option>
-              <option value="guides">UK wallet & safety guides</option>
-              <option value="community">Community updates</option>
-              <option value="builders">Builder / project news</option>
-            </select>
-          </label>
-          <button className="btn btn-primary" type="submit">
-            {sent ? "Opening mail…" : "Send my request"}
-          </button>
+    <section className="funnel community-funnel" aria-label={`Join ${COMMUNITY_NAME}`}>
+      <div className="funnel-main">
+        <p className="funnel-brand">{COMMUNITY_NAME}</p>
+        <h3 className="funnel-heading">Pick a lane. Meet the room.</h3>
+        <p className="funnel-lede">
+          This site teaches. The Discord is where the three pillars get loud —
+          Clarity, Safety, Belonging — plus rooms for investing and the wider
+          university of life. Bring curiosity; leave the carnival barkers.
+        </p>
+
+        <fieldset className="lane-picker">
+          <legend>What are you looking for first?</legend>
+          <div className="lane-grid" role="radiogroup" aria-label="Community lane">
+            {LANES.map((item) => {
+              const selected = lane === item.id;
+              return (
+                <button
+                  key={item.id}
+                  type="button"
+                  role="radio"
+                  aria-checked={selected}
+                  className={selected ? "lane-option is-selected" : "lane-option"}
+                  onClick={() => setLane(item.id)}
+                >
+                  <span className="lane-tag">{item.tag}</span>
+                  <strong>{item.title}</strong>
+                  <span>{item.blurb}</span>
+                </button>
+              );
+            })}
+          </div>
         </fieldset>
-      </form>
+
+        <p className="funnel-chosen" aria-live="polite">
+          Next stop: <strong>{chosen.title}</strong> energy inside{" "}
+          {COMMUNITY_NAME}.
+        </p>
+
+        <p className="cta-row">
+          <a
+            className="btn btn-primary"
+            href={discordHref}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Join the Discord
+          </a>
+          <Link className="btn btn-ghost" href="/belonging">
+            Browse Belonging guides
+          </Link>
+        </p>
+        <p className="funnel-fineprint">
+          Invite opens Discord in a new tab. Unofficial Dogecoin UK site — not
+          financial advice. Verify channels; never share a seed phrase in DMs.
+        </p>
+      </div>
 
       <aside className="availability" aria-live="polite">
-        <h3>UK desk hours</h3>
+        <h3>UK community pulse</h3>
         <p className="live-pill">
           <i aria-hidden />
-          {availability.open ? "Live now" : "Queued"}
+          {availability.open ? "Live now" : "Always open"}
         </p>
         <p>
           <strong>{availability.label}.</strong> {availability.window}
         </p>
-        <p>Unofficial community site. No spam blasts — just useful drops.</p>
+        <p>
+          Brawling-friendly learning: DOGE pillars first, then the rest of life
+          — investing, habits, and honest questions.
+        </p>
+        <p>
+          <a href={DISCORD_INVITE} target="_blank" rel="noopener noreferrer">
+            discord.gg/x5D3gtH3
+          </a>
+        </p>
       </aside>
     </section>
   );
@@ -105,8 +159,8 @@ const PATHS = [
   {
     id: "new",
     title: "Brand new to DOGE",
-    detail: "What it is, how a send works, then a calm first checklist.",
-    href: "/guide/what-is-dogecoin",
+    detail: "Absolute beginner path, then a calm first checklist.",
+    href: "/guide/dogecoin-for-absolute-beginners",
     next: "/guide/first-doge-checklist",
   },
   {
@@ -114,7 +168,7 @@ const PATHS = [
     title: "Worried about scams",
     detail: "Phishing patterns, fake giveaways, and seed-phrase red lines.",
     href: "/guide/phishing-red-flags",
-    next: "/guide/scam-patterns-uk",
+    next: "/guide/dogecoin-faq-safety",
   },
   {
     id: "wallet",

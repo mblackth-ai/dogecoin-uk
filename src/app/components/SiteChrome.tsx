@@ -13,7 +13,7 @@ export function SiteHeader() {
         <Link href="/belonging">Belonging</Link>
         <Link href="/map">Guides</Link>
         <Link href="/niche">Niche</Link>
-        <Link href="/#join">Join</Link>
+        <Link href="/#join">Community</Link>
       </nav>
     </header>
   );

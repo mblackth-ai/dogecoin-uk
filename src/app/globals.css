@@ -70,6 +70,7 @@ body {
   font-family: var(--font-body), system-ui, sans-serif;
   font-size: var(--body);
   line-height: 1.55;
+  overflow-x: clip;
 }
 
 a {
@@ -131,14 +132,12 @@ svg {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  min-height: min(92dvh, 54rem);
-  gap: var(--space);
-  padding-block: clamp(2.5rem, 8vw, 5rem);
   position: relative;
-  overflow: clip;
+  isolation: isolate;
+  min-height: min(92dvh, 54rem);
+  padding-block: clamp(2.5rem, 8vw, 5rem);
+  padding-bottom: clamp(3.25rem, 10vw, 6rem);
+  overflow: visible;
   background: linear-gradient(
     155deg,
     var(--sky) 0%,
@@ -150,17 +149,30 @@ svg {
 .hero::after {
   content: "";
   position: absolute;
-  top: -10%;
-  right: -5%;
+  z-index: 0;
+  top: max(-4rem, -8%);
+  right: max(-3rem, -4%);
   width: min(55vh, 28rem);
   height: min(55vh, 28rem);
   background: radial-gradient(circle, #ffe9a8 0%, transparent 68%);
-  animation: shimmer 4s ease-in-out infinite;
+  opacity: 0.55;
+  animation: shimmer 4s ease-in-out 0.8s infinite;
   pointer-events: none;
 }
 
+.hero-frame {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  width: min(100% - (var(--space) * 2), var(--max));
+  margin-inline: auto;
+}
+
 @media (min-width: 900px) {
-  .hero {
+  .hero-frame {
     grid-template-columns: 1.05fr 0.95fr;
   }
 }
@@ -180,7 +192,7 @@ svg {
   letter-spacing: -0.04em;
   line-height: 0.95;
   margin: 0;
-  animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .hero h1 {
@@ -190,14 +202,14 @@ svg {
   letter-spacing: -0.03em;
   line-height: 1.12;
   margin: 0;
-  animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 .hero-lede {
   margin: 0;
   color: var(--navy-soft);
   max-width: 32rem;
-  animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
 }
 
 .cta-row {
@@ -205,7 +217,7 @@ svg {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 0.5rem;
-  animation: rise 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  animation: rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
 
 .btn {
@@ -246,9 +258,36 @@ svg {
   z-index: 1;
   display: grid;
   place-items: center;
-  min-height: 16rem;
+  justify-self: center;
+  width: min(100%, 22rem);
+  min-height: 14rem;
   aspect-ratio: 1 / 1;
-  animation: float-coin 6.5s ease-in-out infinite;
+  /* Room for float + rotate so edges never clip */
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  overflow: visible;
+  animation: rise-coin 1.05s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
+}
+
+@media (min-width: 900px) {
+  .hero-visual {
+    width: min(100%, 28rem);
+    min-height: 16rem;
+  }
+}
+
+.hero-visual-motion {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 55%;
+  animation: float-coin 6.5s ease-in-out 1.2s infinite;
+}
+
+.hero-visual svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 .band {
@@ -471,52 +510,114 @@ svg {
   }
 }
 
-.funnel form,
+.funnel-main,
 .funnel aside {
   border: 1px solid var(--line);
   background: var(--surface);
   padding: clamp(1.15rem, 2.5vw, 1.6rem);
 }
 
-.funnel fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 0.85rem;
+.funnel-brand {
+  margin: 0 0 0.35rem;
+  font-size: var(--small);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-deep, #9a7418);
 }
 
-.funnel legend {
+.funnel-heading {
+  margin: 0 0 0.5rem;
   font-family: var(--font-display), system-ui, sans-serif;
-  font-size: 1.25rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  font-weight: 800;
+  color: var(--navy);
+}
+
+.funnel-lede,
+.funnel-chosen,
+.funnel-fineprint {
+  margin: 0 0 1rem;
+  color: var(--navy-soft);
+}
+
+.funnel-fineprint {
+  margin-bottom: 0;
+  font-size: var(--small);
+}
+
+.lane-picker {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+.lane-picker legend {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
   padding: 0;
+  color: var(--navy);
 }
 
-.funnel label {
+.lane-grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+@media (min-width: 640px) {
+  .lane-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.lane-option {
   display: grid;
   gap: 0.35rem;
-  font-size: var(--small);
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.funnel input,
-.funnel select {
-  font: inherit;
-  padding: 0.75rem 0.85rem;
+  text-align: left;
+  padding: 0.85rem 0.95rem;
   border: 1px solid var(--line);
   background: var(--sand);
   color: var(--navy);
-  text-transform: none;
-  letter-spacing: normal;
+  cursor: pointer;
+  transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+}
+
+.lane-option:hover {
+  border-color: color-mix(in srgb, var(--gold) 55%, var(--line));
+  transform: translateY(-1px);
+}
+
+.lane-option.is-selected {
+  border-color: var(--gold);
+  background: color-mix(in srgb, var(--gold) 14%, var(--sand));
+}
+
+.lane-option:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.lane-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-deep, #9a7418);
+}
+
+.lane-option strong {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.05rem;
+}
+
+.lane-option span:last-child {
+  font-size: var(--small);
+  color: var(--navy-soft);
   font-weight: 500;
 }
 
-.funnel input:focus-visible,
-.funnel select:focus-visible,
 .btn:focus-visible,
 .site-nav a:focus-visible {
   outline: 2px solid var(--gold);
@@ -586,7 +687,7 @@ svg {
 @keyframes rise {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
@@ -594,13 +695,24 @@ svg {
   }
 }
 
+@keyframes rise-coin {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes float-coin {
   0%,
   100% {
-    transform: translateY(0) rotate(-4deg);
+    transform: translateY(0) rotate(-3deg);
   }
   50% {
-    transform: translateY(-14px) rotate(4deg);
+    transform: translateY(-12px) rotate(3deg);
   }
 }
 
@@ -749,8 +861,19 @@ svg {
   .hero-lede,
   .cta-row,
   .hero-visual,
+  .hero-visual-motion,
   .hero::after,
   .live-pill i {
     animation: none;
+  }
+
+  .hero-brand,
+  .hero h1,
+  .hero-lede,
+  .cta-row,
+  .hero-visual,
+  .hero::after {
+    opacity: 1;
+    transform: none;
   }
 }

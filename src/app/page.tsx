@@ -17,30 +17,34 @@ export default function Home() {
       <SiteHeader />
 
       <main id="top">
-        <section className="hero shell" aria-labelledby="hero-brand">
-          <header className="hero-copy">
-            <p className="hero-brand" id="hero-brand">
-              Dogecoin
-            </p>
-            <h1>UK home for DOGE — clear, calm, useful.</h1>
-            <p className="hero-lede">
-              People land here for belonging, safety, and plain English — not
-              carnival price calls. Browse {stats.nodes} guides across Clarity,
-              Safety, and Belonging.
-            </p>
-            <p className="cta-row">
-              <a className="btn btn-primary" href="#join">
-                Join the UK list
-              </a>
-              <Link className="btn btn-ghost" href="/map">
-                Browse all guides
-              </Link>
-            </p>
-          </header>
+        <section className="hero" aria-labelledby="hero-brand">
+          <div className="hero-frame shell">
+            <header className="hero-copy">
+              <p className="hero-brand" id="hero-brand">
+                Dogecoin
+              </p>
+              <h1>UK home for DOGE — clear, calm, useful.</h1>
+              <p className="hero-lede">
+                People land here for belonging, safety, and plain English — not
+                carnival price calls. Browse {stats.nodes} guides across Clarity,
+                Safety, and Belonging.
+              </p>
+              <p className="cta-row">
+                <a className="btn btn-primary" href="#join">
+                  Join the community
+                </a>
+                <Link className="btn btn-ghost" href="/map">
+                  Browse all guides
+                </Link>
+              </p>
+            </header>
 
-          <figure className="hero-visual" aria-label="Stylised Dogecoin disc">
-            <DogeCoinVisual />
-          </figure>
+            <figure className="hero-visual" aria-label="Stylised Dogecoin disc">
+              <span className="hero-visual-motion">
+                <DogeCoinVisual />
+              </span>
+            </figure>
+          </div>
         </section>
 
         <section className="band band-alt" id="pillars" aria-labelledby="pillars-title">
@@ -180,20 +184,20 @@ export default function Home() {
               </Link>
             </li>
             <li>
-              <Link href="/guide/first-doge-checklist">
+              <Link href="/guide/dogecoin-for-absolute-beginners">
                 <strong>Where should a complete beginner start?</strong>
                 <span>
-                  Clarity first, then a calm first-DOGE checklist, then safety
-                  habits before any serious balance.
+                  A short honest on-ramp, then the first-DOGE checklist — slowly,
+                  before any serious balance.
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="/guide/scam-patterns-uk">
-                <strong>What do UK DOGE scams usually look like?</strong>
+              <Link href="/guide/dogecoin-faq-safety">
+                <strong>Got a quick safety question?</strong>
                 <span>
-                  Urgency, fake giveaways, recovery cons, and lookalike
-                  support — local accent, same script.
+                  Short answers on seeds, giveaways, and what to do after a
+                  sketchy click — without the lecture voice.
                 </span>
               </Link>
             </li>
@@ -201,11 +205,12 @@ export default function Home() {
         </section>
 
         <section className="band" id="join" aria-labelledby="join-title">
-          <p className="kicker">Stay in the loop</p>
-          <h2 id="join-title">Say what you want. We’ll keep it useful.</h2>
+          <p className="kicker">Belonging · live community</p>
+          <h2 id="join-title">From guides to the room — The University of Life.</h2>
           <p>
-            Tell us which updates help you most. The UK desk replies in London
-            hours — no spam blasts.
+            Finished reading? Jump into the Discord where Clarity, Safety, and
+            Belonging meet a wider learning pack — including investing and life
+            skills beyond DOGE alone.
           </p>
           <LeadFunnel />
         </section>
@@ -224,6 +229,7 @@ function DogeCoinVisual() {
       aria-label="Stylised Dogecoin gold disc"
       width="520"
       height="520"
+      overflow="visible"
     >
       <defs>
         <radialGradient id="coinFace" cx="35%" cy="30%" r="70%">
@@ -235,43 +241,59 @@ function DogeCoinVisual() {
           <stop offset="80%" stopColor="#c99620" />
           <stop offset="100%" stopColor="#8f6a12" />
         </radialGradient>
+        <filter
+          id="coinSoftShadow"
+          x="-20%"
+          y="-15%"
+          width="140%"
+          height="145%"
+        >
+          <feDropShadow
+            dx="0"
+            dy="18"
+            stdDeviation="16"
+            floodColor="#1b2a4a"
+            floodOpacity="0.18"
+          />
+        </filter>
       </defs>
-      <circle cx="260" cy="270" r="190" fill="#1b2a4a" fillOpacity="0.1" />
-      <circle cx="260" cy="260" r="188" fill="url(#coinRim)" />
-      <circle cx="260" cy="260" r="164" fill="url(#coinFace)" />
-      <circle
-        cx="260"
-        cy="260"
-        r="146"
-        fill="none"
-        stroke="#fff6d4"
-        strokeOpacity="0.55"
-        strokeWidth="3"
-      />
-      <text
-        x="260"
-        y="292"
-        textAnchor="middle"
-        fill="#1b2a4a"
-        fontFamily="system-ui, sans-serif"
-        fontSize="132"
-        fontWeight="800"
-      >
-        Ð
-      </text>
-      <text
-        x="260"
-        y="348"
-        textAnchor="middle"
-        fill="#1b2a4a"
-        fillOpacity="0.7"
-        fontFamily="system-ui, sans-serif"
-        fontSize="24"
-        fontWeight="700"
-        letterSpacing="6"
-      >
-        DOGE
-      </text>
+      <g filter="url(#coinSoftShadow)">
+        <circle cx="260" cy="260" r="188" fill="url(#coinRim)" />
+        <circle cx="260" cy="260" r="164" fill="url(#coinFace)" />
+        <circle
+          cx="260"
+          cy="260"
+          r="146"
+          fill="none"
+          stroke="#fff6d4"
+          strokeOpacity="0.55"
+          strokeWidth="3"
+        />
+        <text
+          x="260"
+          y="292"
+          textAnchor="middle"
+          fill="#1b2a4a"
+          fontFamily="var(--font-display), system-ui, sans-serif"
+          fontSize="132"
+          fontWeight="800"
+        >
+          Ð
+        </text>
+        <text
+          x="260"
+          y="348"
+          textAnchor="middle"
+          fill="#1b2a4a"
+          fillOpacity="0.7"
+          fontFamily="var(--font-body), system-ui, sans-serif"
+          fontSize="24"
+          fontWeight="700"
+          letterSpacing="6"
+        >
+          DOGE
+        </text>
+      </g>
     </svg>
   );
 }

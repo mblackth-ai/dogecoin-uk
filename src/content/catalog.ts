@@ -829,26 +829,26 @@ export const catalog: PageNode[] = [
   },
   {
     slug: "join-the-list",
-    title: "Join the UK list",
+    title: "Join The University of Life",
     pillar: "belonging",
-    summary: "Occasional useful updates — not noise, not price calls.",
-    hook: "Signal only. No carnival barkers.",
-    tags: ["updates", "community"],
+    summary:
+      "Discord community for Clarity, Safety, Belonging — plus investing and wider life learning.",
+    hook: "Guides teach. The room is where the pack shows up.",
+    tags: ["community", "discord", "belonging"],
     related: [
       "uk-community-pulse",
       "why-uk-domain",
       "first-doge-checklist",
       "phishing-red-flags",
-      "proof-matrix",
-    
-      "creators-and-builders",
+      "uk-doge-community-path",
+      "uk-on-ramp-mindset",
       "dogecoin-desk-hours",
     ],
     body: [
-      "Use Join on the home page to request the update stream that matches you: explainers, safety, community, or builders.",
-      "We show UK desk hours so you know when a human is likely to reply.",
-      "Your request opens your mail client on purpose — clearer intent, fewer dark patterns.",
-      "Belonging scales through useful drops, not daily spam.",
+      "Use Community on the home page to pick a lane — Clarity, Safety, Belonging, or broader life & investing — then join The University of Life on Discord.",
+      "Invite link: https://discord.gg/x5D3gtH3 — verify the URL, never share seed phrases in DMs, and treat support requests with the same hygiene as on-chain sends.",
+      "This is a brawling learning community: DOGE pillars first, then rooms for investing and life skills beyond crypto alone.",
+      "Belonging scales through real conversation — not mailing-list spam or carnival price calls.",
     ],
   },
   {
