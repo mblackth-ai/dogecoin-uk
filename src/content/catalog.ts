@@ -754,7 +754,7 @@ export const catalog: PageNode[] = [
       "UK Dogecoin energy tends to be dryer humour, sharper scam awareness, and less carnival barking.",
       "We’ll grow this page with community notes, reading lists, and event pointers as they earn trust.",
       "If you run a meetup, lead with safety and clarity — belonging follows.",
-      "Want updates? Use Join on the home page — the quiet doorbell for the UK list.",
+      "Want the room, not a list? Use Community on the home page — it opens The University of Life on Discord.",
     ],
   },
   {
@@ -3123,7 +3123,7 @@ export const catalog: PageNode[] = [
       "proof-matrix",
     ],
     body: [
-      "The join form shows whether the community desk is in London daytime hours.",
+      "The Community funnel shows UK chatter peaks so you know when the pack is loudest.",
       "Night messages still land — they wait for morning eyes instead of carnival bots.",
       "Unofficial does not mean unattended. It means honest about who we are.",
       "If something is urgent and financial, do not wait on email — use your own safety procedures.",
