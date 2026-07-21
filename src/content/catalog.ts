@@ -852,7 +852,8 @@ export const catalog: PageNode[] = [
       "self-custody-checklist",
       "common-mistakes",
     
-      "stable-habits",],
+      "stable-habits",
+      "public-wifi-risks",],
     body: [
       "Unique passwords. A manager. App-based or hardware 2FA over SMS when you can.",
       "SIM-swap is a UK-relevant threat. SMS 2FA is better than nothing and worse than app 2FA.",
@@ -1044,7 +1045,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "password-and-2fa",
       "self-custody-checklist",
-    ],
+    
+      "public-wifi-risks",],
     body: [
       "Phones are convenient attack surfaces. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
@@ -1388,6 +1390,27 @@ export const catalog: PageNode[] = [
       "Prefer showing your receive QR from your own wallet — not a PDF someone emailed.",
       "For large moves, still do a dust test after scanning.",
       "QR convenience dies the moment you stop verifying.",
+    ],
+  },
+  {
+    slug: "public-wifi-risks",
+    title: "Public Wi‑Fi risks",
+    pillar: "safety",
+    summary: "Cafés, airports, and the quiet ways sessions get stolen.",
+    hook: "Free Wi‑Fi is rarely free of intent.",
+    tags: ["opsec", "mobile"],
+    related: [
+      "mobile-wallet-hygiene",
+      "password-and-2fa",
+      "phishing-red-flags",
+      "stable-habits",
+      "support-impersonation",
+    ],
+    body: [
+      "Avoid wallet ops on open networks when you can. Use trusted mobile data for signing moments.",
+      "Captive portals are phishing theatres. Type known URLs yourself.",
+      "VPN helps some threats and none of social engineering.",
+      "If you must act on public Wi‑Fi, keep amounts tiny and eyes open.",
     ],
   },
 ];
