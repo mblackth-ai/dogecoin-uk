@@ -554,7 +554,8 @@ export const catalog: PageNode[] = [
       "seed-phrases",
       "fake-giveaways",
       "if-you-got-scammed",
-    ],
+    
+      "screenshot-scams",],
     body: [
       "Impersonators create urgency: locked account, suspicious login, refund window closing.",
       "They want remote access or seeds. Deny both. Hang up. Use official channels you typed.",
@@ -888,7 +889,8 @@ export const catalog: PageNode[] = [
       "common-mistakes",
     
       "dust-and-spam",
-      "transaction-notes",],
+      "transaction-notes",
+      "screenshot-scams",],
     body: [
       "Paste a txid into a reputable explorer. Confirm amount, addresses, and confirmation count.",
       "Never trust a cropped image from a stranger as proof of payment.",
@@ -1664,6 +1666,27 @@ export const catalog: PageNode[] = [
       "When every chat is certain, raise your verify standards — not your size.",
       "This is literacy, not a timing strategy.",
       "Belonging includes permission to sit out the carnival.",
+    ],
+  },
+  {
+    slug: "screenshot-scams",
+    title: "Screenshot scams",
+    pillar: "safety",
+    summary: "Fake balances, fake tickets, fake ‘proof of send’.",
+    hook: "Pixels are costumes.",
+    tags: ["scams", "opsec"],
+    related: [
+      "reading-block-explorers",
+      "fake-giveaways",
+      "support-impersonation",
+      "phishing-red-flags",
+      "social-engineering",
+    ],
+    body: [
+      "Never accept a cropped image as settlement. Check a txid on an explorer you typed.",
+      "Fake support tickets use official-looking templates. Hang up and reopen from a bookmark.",
+      "If someone rushes you to ‘confirm you received it’ via screenshot, assume theatre.",
+      "Explorers gossip; screenshots perform.",
     ],
   },
 ];
