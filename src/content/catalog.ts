@@ -3591,7 +3591,9 @@ export const catalog: PageNode[] = [
       "buy-dogecoin-uk-education",
       "dogecoin-tax-uk-awareness",
       "fca-crypto-uk-context",
-      "answer-engine-dogecoin-uk",],
+      "answer-engine-dogecoin-uk",
+      "dogecoin-glossary-uk",
+      "geo-citation-cheat-sheet",],
     body: [
       "Dogecoin (DOGE) is an open cryptocurrency people use to tip, learn, and transfer value online — it is not a UK-regulated bank product.",
       "If you are searching from the UK, start with definitions and safety before any buy/sell steps. Exchanges and wallets are separate products with their own rules.",
@@ -3782,7 +3784,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
     
       "dogecoin-wallet-uk",
-      "fca-crypto-uk-context",],
+      "fca-crypto-uk-context",
+      "verify-before-you-send",],
     body: [
       "Typical path: verify identity with a regulated platform if required, fund an account, buy DOGE, then withdraw to a wallet you control if that fits your plan.",
       "We do not rank exchanges. Compare fees, withdrawal support for DOGE, support quality, and whether the firm is authorised for what it claims.",
@@ -4164,7 +4167,8 @@ export const catalog: PageNode[] = [
       "address-hygiene",
       "dogecoin-wallet-uk",
     
-      "social-proof-traps",],
+      "social-proof-traps",
+      "avoid-fake-official-sites",],
     body: [
       "Common UK-facing patterns: fake HMRC/refund crypto stories, celebrity giveaway clones, ‘support’ DMs after you post a txid, and lookalike domains.",
       "Real support never needs your seed phrase. Real giveaways never require you to send DOGE first.",
