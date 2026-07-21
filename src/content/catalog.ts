@@ -462,7 +462,8 @@ export const catalog: PageNode[] = [
       "fees-and-speed",
     
       "liquidity-basics",
-      "uk-tax-mindset",],
+      "uk-tax-mindset",
+      "market-orders-basics",],
     body: [
       "Use regulated, well-known venues you researched yourself. Avoid ‘too helpful’ strangers with referral urgency.",
       "Expect identity checks. That friction is often a safety feature, not a conspiracy.",
@@ -967,7 +968,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "common-mistakes",
       "why-people-buy-doge",
-    ],
+    
+      "market-orders-basics",],
     body: [
       "Why the price you see is not always the price you get. This page exists so the graph has another door for that intent.",
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
@@ -1503,6 +1505,27 @@ export const catalog: PageNode[] = [
       "Sending may consume multiple notes and create change — explorers make this visible.",
       "Dust and spam interact with this model; that’s why address hygiene matters.",
       "You do not need to be an engineer — just stop expecting a bank UI under the hood.",
+    ],
+  },
+  {
+    slug: "market-orders-basics",
+    title: "Market orders basics",
+    pillar: "clarity",
+    summary: "Buy/sell buttons without pretending it’s advice.",
+    hook: "Execution mechanics ≠ destiny.",
+    tags: ["markets", "uk"],
+    related: [
+      "uk-buying-basics",
+      "liquidity-basics",
+      "not-financial-advice",
+      "fees-and-speed",
+      "volatility-psychology",
+    ],
+    body: [
+      "A market order prioritises fill speed over exact price. Spreads and depth matter.",
+      "During chaos, the fill can surprise you. Size down or wait.",
+      "This page explains mechanics, not whether you should trade.",
+      "If urgency is emotional, step away before you click.",
     ],
   },
 ];
