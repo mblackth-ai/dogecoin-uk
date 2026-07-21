@@ -839,7 +839,8 @@ export const catalog: PageNode[] = [
       "tipping-culture",
     
       "community-moderation",
-      "dogecoin-tips-irl",],
+      "dogecoin-tips-irl",
+      "uk-meetup-safety",],
     body: [
       "Open with a safety five minutes. Normalise seed hygiene talk like you normalise fire exits.",
       "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
@@ -1165,7 +1166,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "unofficial-disclaimer",
       "creators-and-builders",
-    ],
+    
+      "uk-meetup-safety",],
     body: [
       "Keeping UK spaces kind without becoming a cult. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
@@ -1572,6 +1574,27 @@ export const catalog: PageNode[] = [
       "Start tiny. Celebrate the ritual more than the amount.",
       "Never ‘match’ a tip to a stranger’s urgent address.",
       "IRL kindness plus verify steps is the UK brand of belonging.",
+    ],
+  },
+  {
+    slug: "uk-meetup-safety",
+    title: "UK meetup safety",
+    pillar: "belonging",
+    summary: "Run or attend a meetup without becoming a honeypot.",
+    hook: "Hospitality includes exits and boundaries.",
+    tags: ["uk", "irl"],
+    related: [
+      "meetups-and-irl",
+      "community-moderation",
+      "phishing-red-flags",
+      "onboarding-a-friend",
+      "uk-community-pulse",
+    ],
+    body: [
+      "Public venue, clear end time, no seed phrases on stage, no pressure to install apps on the spot.",
+      "Announce that support never DMs first — say it out loud every time.",
+      "Pair newcomers with a buddy for their first questions.",
+      "A safe meetup grows the graph offline.",
     ],
   },
 ];
