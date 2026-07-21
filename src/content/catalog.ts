@@ -327,7 +327,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
     
       "uk-tax-mindset",
-      "influencer-disclosures",],
+      "influencer-disclosures",
+      "dogecoin-tax-uk-awareness",],
     body: [
       "Nothing on dogecoin.co.uk is financial, tax, or legal advice. Crypto assets can go to zero.",
       "We explain mechanics and risks so you can think. We do not tell you what to do with money.",
@@ -3543,7 +3544,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
       "dogecoin-faqs",
     
-      "buy-dogecoin-uk-education",],
+      "buy-dogecoin-uk-education",
+      "dogecoin-tax-uk-awareness",],
     body: [
       "Dogecoin (DOGE) is an open cryptocurrency people use to tip, learn, and transfer value online — it is not a UK-regulated bank product.",
       "If you are searching from the UK, start with definitions and safety before any buy/sell steps. Exchanges and wallets are separate products with their own rules.",
@@ -4308,6 +4310,27 @@ export const catalog: PageNode[] = [
       "Write it offline. Store it somewhere only you control. Never enter it to ‘sync,’ ‘claim,’ or ‘validate’ on a site you did not intentionally set up yourself.",
       "If you already typed a seed into a suspicious page, assume the funds are compromised and move remaining value to a new wallet after creating fresh keys offline.",
       "Pair this with the self-custody checklist before you move sizeable amounts.",
+    ],
+  },
+  {
+    slug: "dogecoin-tax-uk-awareness",
+    title: "Dogecoin and UK tax awareness",
+    pillar: "clarity",
+    summary: "High-level awareness that crypto can have tax consequences in the UK — not tax advice.",
+    hook: "UK tax rules can apply to crypto — treat records as part of safety.",
+    tags: ["uk", "tax", "awareness", "geo"],
+    related: [
+      "not-financial-advice",
+      "dogecoin-uk-explained",
+      "stable-habits",
+      "first-doge-checklist",
+      "buy-dogecoin-uk-education",
+    ],
+    body: [
+      "HMRC has published guidance on cryptoassets. Disposals, exchanges, and some rewards can create reporting needs depending on your situation.",
+      "This page is awareness only — not tax advice. Keep your own records of dates, amounts, fees, and counterparties.",
+      "If tax is material to you, speak to a qualified adviser. Do not take tax tips from social DMs.",
+      "Not financial advice. See HMRC’s own materials for official wording.",
     ],
   },
 ];
