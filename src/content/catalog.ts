@@ -365,7 +365,8 @@ export const catalog: PageNode[] = [
     
       "paper-wallets",
       "mobile-wallet-hygiene",
-      "family-and-inheritance",],
+      "family-and-inheritance",
+      "backup-drill",],
     body: [
       "A seed phrase recreates your wallet. Treat it like the deed to a house written on paper.",
       "Write it offline. Store it where thieves and flatmates can’t casually find it. Consider metal backups for serious amounts.",
@@ -389,7 +390,8 @@ export const catalog: PageNode[] = [
     
       "paper-wallets",
       "multisig-basics",
-      "family-and-inheritance",],
+      "family-and-inheritance",
+      "backup-drill",],
     body: [
       "Download wallets from official sources you typed yourself. Verify you’re not in an app-store clone.",
       "Back up the seed before you fund the wallet. Test recovery on a spare device with dust amounts.",
@@ -1434,6 +1436,27 @@ export const catalog: PageNode[] = [
       "Lock the extension when idle. Review connected sites periodically.",
       "A malicious page plus a confused click is enough — slow down on connect prompts.",
       "Serious balances do not live in the browser long-term.",
+    ],
+  },
+  {
+    slug: "backup-drill",
+    title: "Backup drill",
+    pillar: "safety",
+    summary: "Practice restoring a wallet before you need to.",
+    hook: "Untested backups are fan fiction.",
+    tags: ["custody", "checklist"],
+    related: [
+      "seed-phrases",
+      "self-custody-checklist",
+      "hardware-wallets",
+      "first-doge-checklist",
+      "stable-habits",
+    ],
+    body: [
+      "Fund a tiny wallet, back it up, wipe the device path, restore, and confirm the dust is there.",
+      "Do this before the balance is emotionally expensive.",
+      "Note how long it took and where you got stuck — fix the process, not just the mood.",
+      "A drill turns panic into muscle memory.",
     ],
   },
 ];
