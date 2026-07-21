@@ -26,7 +26,9 @@ export const catalog: PageNode[] = [
       "reading-charts-calmly",
       "meme-coins-vs-dogecoin",
       "dogecoin-for-parents",
-    ],
+    
+      "dogecoin-faqs",
+      "graph-how-to-wander",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -188,7 +190,8 @@ export const catalog: PageNode[] = [
       "myths-to-ignore",
       "what-is-dogecoin",
       "mining-and-security",
-    ],
+    
+      "supply-myths",],
     body: [
       "Dogecoin continues to issue new coins over time. That design funds security and keeps the monetary story different from hard-cap maximalism.",
       "Whether that is ‘good’ depends on what you want money-like assets to do. There is no universal answer.",
@@ -256,7 +259,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "first-doge-checklist",
     
-      "uk-search-intent",],
+      "uk-search-intent",
+      "uk-english-tone",],
     body: [
       "dogecoin.co.uk is an unofficial community presence. It is not the Dogecoin Foundation and not a financial adviser.",
       "The `.co.uk` signal answers a quiet visitor question: ‘is there a local, sane explanation?’ Yes — start here.",
@@ -700,7 +704,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "dogecoin-vs-bitcoin",
       "why-people-buy-doge",
-    ],
+    
+      "supply-myths",],
     body: [
       "‘It’s too late’ and ‘it’s guaranteed’ are twin scams of emotion.",
       "‘Everyone is getting rich’ is selection bias wearing a tracksuit.",
@@ -721,7 +726,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "phishing-red-flags",
       "join-the-list",
-    ],
+    
+      "graph-how-to-wander",],
     body: [
       "UK presence without fake authority. Unofficial on purpose. Zero price prophecy.",
       "Guides should leave you with a next useful step — Clarity, Safety, or Belonging — not a dead end.",
@@ -766,7 +772,8 @@ export const catalog: PageNode[] = [
       "uk-community-pulse",
     
       "charity-and-causes",
-      "dogecoin-tips-irl",],
+      "dogecoin-tips-irl",
+      "kindness-without-naivety",],
     body: [
       "Dogecoin’s tip culture taught a generation that micro-generosity can be playful.",
       "Scammers copy the warmth and add a payment demand. Real tips never require you to send first to a stranger’s ‘matching’ address.",
@@ -1044,7 +1051,8 @@ export const catalog: PageNode[] = [
     
       "hype-cycle-literacy",
       "watching-without-watching",
-    ],
+    
+      "time-locked-habits",],
     body: [
       "Price swings hijack attention. Fear and euphoria both push people to skip the boring checks they already know.",
       "A useful rule: when your body feels urgent, your procedure gets longer — not shorter. Verify addresses twice. Pause DMs.",
@@ -1065,7 +1073,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "culture-and-memes",
       "uk-community-pulse",
-    ],
+    
+      "kindness-without-naivety",],
     body: [
       "Dogecoin culture has a real kindness streak — tips, fundraisers, and cause energy that feels like the point.",
       "Scammers wear the same costume. Fake charity wallets, lookalike orgs, and ‘match my donation’ pressure are common.",
@@ -1348,7 +1357,8 @@ export const catalog: PageNode[] = [
       "address-hygiene",
       "volatility-psychology",
       "common-mistakes",
-    ],
+    
+      "time-locked-habits",],
     body: [
       "Safety is mostly boring repetition: updates, locks, bookmarks, test sends, and not rushing DMs.",
       "Weekly: skim account alerts, confirm your backup still exists, delete a phishing email without clicking.",
@@ -1390,7 +1400,9 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "join-the-list",
       "proof-matrix",
-    ],
+    
+      "dogecoin-faqs",
+      "uk-english-tone",],
     body: [
       "People search for Dogecoin in the UK because they want a calm local explanation — not a carnival tip.",
       "Typical quiet questions: what is it, is it a scam, how do wallets work, and where do I start without looking foolish.",
@@ -2302,6 +2314,132 @@ export const catalog: PageNode[] = [
       "Sending under social pressure — livestreams, DMs, countdown pages — multiplies every mistake.",
       "Build a pre-flight: amount, asset, address compare, test dust, then the real send.",
       "Ordinary discipline beats rare genius.",
+    ],
+  },
+  {
+    slug: "time-locked-habits",
+    title: "Time-locked habits",
+    pillar: "safety",
+    summary: "Cooling-off rules before large moves.",
+    hook: "Adrenaline is not a signing key.",
+    tags: ["habits", "psychology"],
+    related: [
+      "volatility-psychology",
+      "stable-habits",
+      "test-transactions",
+      "hot-wallet-limits",
+      "first-doge-checklist",
+    ],
+    body: [
+      "Set personal rules: sleep on large transfers; never sign during an argument or a hyped livestream.",
+      "Use allowlist delays and dust tests as technical cooling-off.",
+      "Write the rule down when you are calm so future-you cannot negotiate it away.",
+      "Safety is often just time.",
+    ],
+  },
+  {
+    slug: "dogecoin-faqs",
+    title: "Dogecoin FAQs",
+    pillar: "clarity",
+    summary: "Short answers to the questions UK newcomers actually ask.",
+    hook: "Clarity is a FAQ with spine.",
+    tags: ["basics", "faq"],
+    related: [
+      "what-is-dogecoin",
+      "doge-glossary",
+      "is-dogecoin-a-joke",
+      "not-financial-advice",
+      "uk-search-intent",
+    ],
+    body: [
+      "Is it a joke? Origin yes; network no. Is it advice? Never here. Is .co.uk official? No — unofficial on purpose.",
+      "Where do I start? Clarity hub, then Safety checklist, then a tiny practice send.",
+      "What about price? We don’t do prophecy.",
+      "More questions belong in the graph — follow related links.",
+    ],
+  },
+  {
+    slug: "supply-myths",
+    title: "Supply myths",
+    pillar: "clarity",
+    summary: "Issuance stories people weaponise in arguments.",
+    hook: "A schedule is not a sermon.",
+    tags: ["economics", "myths"],
+    related: [
+      "inflation-and-supply",
+      "myths-to-ignore",
+      "dogecoin-vs-bitcoin",
+      "mining-and-security",
+      "dogecoin-faqs",
+    ],
+    body: [
+      "People flatten issuance into morality plays. Design trade-offs are not destiny tattoos.",
+      "Compare mechanisms, incentives, and use-cases — skip the purity contest.",
+      "If a chart claims certainty, it is selling something.",
+      "Clarity names trade-offs out loud.",
+    ],
+  },
+  {
+    slug: "kindness-without-naivety",
+    title: "Kindness without naivety",
+    pillar: "belonging",
+    summary: "Do only good everyday — with verify steps attached.",
+    hook: "Warmth that checks twice.",
+    tags: ["culture", "trust"],
+    related: [
+      "tipping-culture",
+      "charity-and-causes",
+      "phishing-red-flags",
+      "meme-literacy",
+      "proof-matrix",
+    ],
+    body: [
+      "Generosity is the brand. Predators know that and cosplay it.",
+      "Give time, links, and small tips — not seeds, remote access, or rushed sends.",
+      "Verify charities and addresses like you’d verify a bank transfer.",
+      "Belonging that survives contact with scammers is the goal.",
+    ],
+  },
+  {
+    slug: "uk-english-tone",
+    title: "UK English tone",
+    pillar: "belonging",
+    summary: "Why this site sounds dry on purpose.",
+    hook: "Dry humour is a trust signal here.",
+    tags: ["uk", "brand"],
+    related: [
+      "why-uk-domain",
+      "uk-search-intent",
+      "uk-community-pulse",
+      "unofficial-disclaimer",
+      "proof-matrix",
+    ],
+    body: [
+      "UK readers often distrust carnival barking. Calm precision reads as respect.",
+      "We keep jokes, but we won’t sell certainty.",
+      "Tone is part of the product — same as page speed.",
+      "If we ever sound like a hyped funnel, call it out.",
+    ],
+  },
+  {
+    slug: "graph-how-to-wander",
+    title: "How to wander the graph",
+    pillar: "belonging",
+    summary: "A map habit: hub → two links → one safety check.",
+    hook: "Curiosity with a seatbelt.",
+    tags: ["map", "habits"],
+    related: [
+      "proof-matrix",
+      "what-is-dogecoin",
+      "phishing-red-flags",
+      "join-the-list",
+      "uk-search-intent",
+    ],
+    body: [
+      "Start at a pillar hub or /map. Open one guide. Follow two related links. End on a safety page before acting.",
+      "That loop is how the site turns into a self-guided curriculum.",
+      "Bookmark the hubs. Ignore urgency from strangers.",
+      "The graph grows; your habit keeps you oriented.",
     ],
   },
 ];
