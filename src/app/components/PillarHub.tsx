@@ -11,7 +11,7 @@ export function pillarMetadata(pillar: Pillar): Metadata {
   const meta = PILLARS[pillar];
   return {
     title: `${meta.title} · Dogecoin UK`,
-    description: `${meta.promise}. ${meta.lever}.`,
+    description: `${meta.promise}. ${meta.blurb}`,
   };
 }
 
@@ -24,10 +24,10 @@ export function PillarHub({ pillar }: Props) {
       <SiteHeader />
       <main>
         <section className="band shell pillar-hero">
-          <p className="kicker">Pillar of success</p>
+          <p className="kicker">{pages.length} guides in this section</p>
           <h1>{meta.title}</h1>
           <p className="hero-lede">{meta.promise}</p>
-          <p className="article-summary">Psychological lever: {meta.lever}</p>
+          <p className="article-summary">{meta.blurb}</p>
         </section>
         <section className="band band-alt">
           <ul className="hub-list">
@@ -36,7 +36,7 @@ export function PillarHub({ pillar }: Props) {
                 <Link href={`/guide/${page.slug}`}>
                   <strong>
                     {page.title}
-                    {page.hub ? " · hub" : ""}
+                    {page.hub ? " · start here" : ""}
                   </strong>
                   <span>{page.summary}</span>
                 </Link>

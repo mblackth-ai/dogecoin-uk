@@ -5,7 +5,7 @@ import {
   getPagesByPillar,
   PILLARS,
 } from "../content";
-import { AssetPipeline, LeadFunnel } from "./components/Interactive";
+import { LeadFunnel, StartHerePaths } from "./components/Interactive";
 import { SiteFooter, SiteHeader } from "./components/SiteChrome";
 
 export default function Home() {
@@ -25,15 +25,15 @@ export default function Home() {
             <h1>UK home for DOGE — clear, calm, useful.</h1>
             <p className="hero-lede">
               People land here for belonging, safety, and plain English — not
-              carnival price calls. Three pillars. One growing graph of{" "}
-              {stats.nodes} interlinked guides.
+              carnival price calls. Browse {stats.nodes} guides across Clarity,
+              Safety, and Belonging.
             </p>
             <p className="cta-row">
               <a className="btn btn-primary" href="#join">
                 Join the UK list
               </a>
               <Link className="btn btn-ghost" href="/map">
-                Open the living map
+                Browse all guides
               </Link>
             </p>
           </header>
@@ -44,12 +44,11 @@ export default function Home() {
         </section>
 
         <section className="band band-alt" id="pillars" aria-labelledby="pillars-title">
-          <p className="kicker">Three pillars of success</p>
+          <p className="kicker">How this site helps</p>
           <h2 id="pillars-title">Clarity. Safety. Belonging.</h2>
           <p>
-            Why this works: each pillar maps to a real psychological need —
-            competence, control, and identity — then cross-links so curiosity
-            never hits a dead end.
+            Three simple paths so you can learn DOGE, stay safer, and feel part
+            of the UK pack — without the shouting.
           </p>
           <section className="service-grid">
             {(Object.keys(PILLARS) as Array<keyof typeof PILLARS>).map((key) => {
@@ -57,13 +56,12 @@ export default function Home() {
               const count = getPagesByPillar(key).length;
               return (
                 <article key={key}>
-                  <p className="benchmark">Value benchmark</p>
+                  <p className="benchmark">{count} guides</p>
                   <h3>
                     <Link href={pillar.href}>{pillar.title}</Link>
                   </h3>
                   <p>
-                    {pillar.promise}. Lever: {pillar.lever}. {count} guides in
-                    this wing.
+                    {pillar.promise}. {pillar.blurb}
                   </p>
                 </article>
               );
@@ -72,11 +70,11 @@ export default function Home() {
         </section>
 
         <section className="band" id="hubs" aria-labelledby="hubs-title">
-          <p className="kicker">Graph entry doors</p>
-          <h2 id="hubs-title">Start at a hub. Wander by design.</h2>
+          <p className="kicker">Best places to begin</p>
+          <h2 id="hubs-title">Start here. Follow what you need next.</h2>
           <p>
-            Hubs are high-gravity pages. Every outbound link is a curiosity
-            bridge into the wider conglomerate.
+            These hub guides answer the first big questions, then point you to
+            the next useful page — so curiosity never hits a dead end.
           </p>
           <ul className="hub-list">
             {hubs.map((page) => (
@@ -92,22 +90,22 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="band band-alt" id="status" aria-labelledby="status-title">
-          <p className="kicker">Hyper-targeted asset pipeline</p>
-          <h2 id="status-title">Live build signal — light on the wire.</h2>
+        <section className="band band-alt" id="paths" aria-labelledby="paths-title">
+          <p className="kicker">Common visitor paths</p>
+          <h2 id="paths-title">Pick a question. We already wrote the answer.</h2>
           <p>
-            {stats.nodes} nodes · {stats.edges} edges · self-growing on a
-            heartbeat expansion loop.
+            Most people arrive with one of these intents. Each path opens a
+            short trail of guides you can finish in one sitting.
           </p>
-          <AssetPipeline />
+          <StartHerePaths />
         </section>
 
         <section className="band" id="proof" aria-labelledby="proof-title">
-          <p className="kicker">Skeptic filter · Trust shield</p>
-          <h2 id="proof-title">Proof matrix — why this site exists.</h2>
+          <p className="kicker">What you can trust here</p>
+          <h2 id="proof-title">Clear rules. No carnival.</h2>
           <p>
-            Clear operating rules so visitors know what they are getting — and
-            what they are not.
+            Operating rules so you know what you are getting — and what you are
+            not.
           </p>
           <ul className="proof-matrix">
             <li>
@@ -123,7 +121,7 @@ export default function Home() {
             <li>
               <strong>{stats.nodes}</strong>
               <span>Guide pages</span>
-              <em>Surface area for search + curiosity</em>
+              <em>Practical answers, linked together</em>
             </li>
             <li>
               <strong>Unofficial</strong>
@@ -139,11 +137,11 @@ export default function Home() {
         </section>
 
         <section className="band band-alt" id="join" aria-labelledby="join-title">
-          <p className="kicker">Two-step frictionless funnel</p>
-          <h2 id="join-title">Say what you want. See if we are live.</h2>
+          <p className="kicker">Stay in the loop</p>
+          <h2 id="join-title">Say what you want. We’ll keep it useful.</h2>
           <p>
-            Step one: request the update that matches you. Step two: availability
-            status for the UK desk.
+            Tell us which updates help you most. The UK desk replies in London
+            hours — no spam blasts.
           </p>
           <LeadFunnel />
         </section>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import Link from "next/link";
+import { useEffect, useState, type FormEvent } from "react";
 
 type Availability = {
   open: boolean;
@@ -52,10 +53,10 @@ export function LeadFunnel() {
   }
 
   return (
-    <section className="funnel" aria-label="Two-step lead funnel">
+    <section className="funnel" aria-label="Join the UK list">
       <form onSubmit={onSubmit} noValidate>
         <fieldset>
-          <legend>Step 1 — Join the UK list</legend>
+          <legend>Your details</legend>
           <label>
             Name
             <input name="name" type="text" autoComplete="name" required placeholder="Your name" />
@@ -86,7 +87,7 @@ export function LeadFunnel() {
       </form>
 
       <aside className="availability" aria-live="polite">
-        <h3>Step 2 — Availability</h3>
+        <h3>UK desk hours</h3>
         <p className="live-pill">
           <i aria-hidden />
           {availability.open ? "Live now" : "Queued"}
@@ -100,69 +101,54 @@ export function LeadFunnel() {
   );
 }
 
-type PulseItem = {
-  id: string;
-  label: string;
-  state: "live" | "build" | "queued";
-  detail: string;
-};
+const PATHS = [
+  {
+    id: "new",
+    title: "Brand new to DOGE",
+    detail: "What it is, how a send works, then a calm first checklist.",
+    href: "/guide/what-is-dogecoin",
+    next: "/guide/first-doge-checklist",
+  },
+  {
+    id: "safe",
+    title: "Worried about scams",
+    detail: "Phishing patterns, fake giveaways, and seed-phrase red lines.",
+    href: "/guide/phishing-red-flags",
+    next: "/guide/scam-patterns-uk",
+  },
+  {
+    id: "wallet",
+    title: "Choosing a wallet",
+    detail: "Custodial vs self-custody, phones, and hardware options.",
+    href: "/guide/wallets-explained",
+    next: "/guide/self-custody-checklist",
+  },
+  {
+    id: "uk",
+    title: "Why this .co.uk site",
+    detail: "Unofficial on purpose — local tone, clear boundaries, no hype.",
+    href: "/guide/why-uk-domain",
+    next: "/guide/uk-community-pulse",
+  },
+] as const;
 
-const PULSE: PulseItem[] = [
-  { id: "1", label: "UK explainers", state: "build", detail: "drafting" },
-  { id: "2", label: "Safety checklist", state: "live", detail: "published soon" },
-  { id: "3", label: "Community board", state: "queued", detail: "next" },
-];
-
-export function AssetPipeline() {
-  const [progress, setProgress] = useState(41);
-  const stamp = useMemo(
-    () =>
-      new Intl.DateTimeFormat("en-GB", {
-        timeZone: "Europe/London",
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      }).format(new Date()),
-    [],
-  );
-
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      setProgress((value) => (value >= 93 ? 38 : value + 1));
-    }, 2600);
-    return () => window.clearInterval(id);
-  }, []);
-
+export function StartHerePaths() {
   return (
-    <section className="pulse-panel" aria-label="Live build status assets">
-      <article>
-        <h3>Layout A · Status list</h3>
-        <ul className="status-list">
-          {PULSE.map((item) => (
-            <li key={item.id}>
-              <span className="dot" data-state={item.state} aria-hidden />
-              <span>{item.label}</span>
-              <span>{item.detail}</span>
-            </li>
-          ))}
-        </ul>
-      </article>
-
-      <article className="meter">
-        <h3>Layout B · Meter</h3>
-        <label htmlFor="doge-progress">Site build completion</label>
-        <progress id="doge-progress" max={100} value={progress}>
-          {progress}%
-        </progress>
-        <p className="ticker">{progress}% toward full UK hub</p>
-      </article>
-
-      <article>
-        <h3>Layout C · Ticker</h3>
-        <p className="ticker">
-          {`[${stamp} UK]\nDomain: live\nCLS target < 0.1\nTTI budget < 2.5s\nCTA: #join`}
-        </p>
-      </article>
+    <section className="pulse-panel" aria-label="Common visitor paths">
+      {PATHS.map((path) => (
+        <article key={path.id}>
+          <h3>{path.title}</h3>
+          <p>{path.detail}</p>
+          <p className="cta-row" style={{ marginTop: "0.75rem" }}>
+            <Link className="btn btn-ghost" href={path.href}>
+              Open guide
+            </Link>
+            <Link className="btn btn-ghost" href={path.next}>
+              Next step
+            </Link>
+          </p>
+        </article>
+      ))}
     </section>
   );
 }

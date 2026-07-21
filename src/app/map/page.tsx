@@ -4,8 +4,9 @@ import { catalog, getGraphStats, PILLARS } from "../../content";
 import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 
 export const metadata: Metadata = {
-  title: "Site map · Dogecoin UK",
-  description: "The interlinked graph of Clarity, Safety, and Belonging pages.",
+  title: "All guides · Dogecoin UK",
+  description:
+    "Browse every Clarity, Safety, and Belonging guide on dogecoin.co.uk.",
 };
 
 export default function MapPage() {
@@ -16,11 +17,11 @@ export default function MapPage() {
       <SiteHeader />
       <main>
         <section className="band shell">
-          <p className="kicker">Surface area</p>
-          <h1>The living map</h1>
+          <p className="kicker">Full library</p>
+          <h1>All guides</h1>
           <p className="hero-lede">
-            {stats.nodes} pages · {stats.edges} directed links · average{" "}
-            {stats.density.toFixed(1)} outbound edges per page.
+            {stats.nodes} pages across Clarity, Safety, and Belonging — pick a
+            topic or follow the related links at the end of each guide.
           </p>
           <ul className="proof-matrix map-stats">
             <li>
@@ -40,8 +41,8 @@ export default function MapPage() {
             </li>
             <li>
               <strong>{stats.edges}</strong>
-              <span>Edges</span>
-              <em>Curiosity bridges between pages</em>
+              <span>Cross-links</span>
+              <em>Paths between related guides</em>
             </li>
           </ul>
         </section>
@@ -54,9 +55,7 @@ export default function MapPage() {
                   <strong>
                     [{PILLARS[page.pillar].title}] {page.title}
                   </strong>
-                  <span>
-                    → {page.related.length} links · {page.summary}
-                  </span>
+                  <span>{page.summary}</span>
                 </Link>
               </li>
             ))}

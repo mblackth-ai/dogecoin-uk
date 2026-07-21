@@ -64,9 +64,9 @@ export default async function GuidePage({ params }: Props) {
         </article>
 
         <section className="band">
-          <RelatedRail title="Continue through the graph" pages={related} />
+          <RelatedRail title="Keep reading" pages={related} />
           <RelatedRail
-            title="Pages that link here"
+            title="Also linked from"
             pages={backlinks.map((item) => ({
               slug: item.slug,
               title: item.title,

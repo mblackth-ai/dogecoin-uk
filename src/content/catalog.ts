@@ -577,7 +577,8 @@ export const catalog: PageNode[] = [
       "seed-phrases",
       "self-custody-checklist",
       "uk-community-pulse",
-    ],
+    
+      "device-compromise",],
     body: [
       "Move remaining funds to a new wallet if keys may be exposed. Rotate passwords and enable 2FA elsewhere.",
       "Contact your bank/exchange fraud teams quickly for fiat on-ramps. Document txids and screenshots.",
@@ -1065,7 +1066,8 @@ export const catalog: PageNode[] = [
       "password-and-2fa",
       "self-custody-checklist",
     
-      "public-wifi-risks",],
+      "public-wifi-risks",
+      "device-compromise",],
     body: [
       "Phones are convenient attack surfaces. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
@@ -1710,6 +1712,27 @@ export const catalog: PageNode[] = [
       "Cloud photos and chat apps are common failure modes.",
       "Metal backups help against fire and coffee — still protect against theft.",
       "Test retrieval in a drill before you trust the stash.",
+    ],
+  },
+  {
+    slug: "device-compromise",
+    title: "If your device is compromised",
+    pillar: "safety",
+    summary: "Assume malware, move funds, rotate everything.",
+    hook: "Speed matters; panic does not.",
+    tags: ["opsec", "incident"],
+    related: [
+      "if-you-got-scammed",
+      "seed-phrases",
+      "password-and-2fa",
+      "hot-wallet-limits",
+      "mobile-wallet-hygiene",
+    ],
+    body: [
+      "From a clean device, move funds to a fresh wallet. Retire the old seed.",
+      "Rotate exchange passwords and 2FA. Check allowlists and devices sessions.",
+      "Do not ‘scan’ with random fix tools from DMs.",
+      "Write the timeline down — patterns help later even when funds don’t return.",
     ],
   },
 ];

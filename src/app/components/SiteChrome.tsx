@@ -11,7 +11,7 @@ export function SiteHeader() {
         <Link href="/clarity">Clarity</Link>
         <Link href="/safety">Safety</Link>
         <Link href="/belonging">Belonging</Link>
-        <Link href="/map">Map</Link>
+        <Link href="/map">Guides</Link>
         <Link href="/#join">Join</Link>
       </nav>
     </header>
@@ -23,11 +23,11 @@ export function SiteFooter() {
   return (
     <footer className="shell site-footer">
       <p>
-        <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial
+        <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial community site
       </p>
-      <p className="audit" aria-label="Graph and performance audit">
-        Graph · {stats.nodes} pages · {stats.edges} links · C{stats.byPillar.clarity}/S
-        {stats.byPillar.safety}/B{stats.byPillar.belonging} · TTI &lt;2.5s
+      <p className="audit" aria-label="Guide library size">
+        {stats.nodes} guides · Clarity {stats.byPillar.clarity} · Safety{" "}
+        {stats.byPillar.safety} · Belonging {stats.byPillar.belonging}
       </p>
       <p>© {new Date().getFullYear()}</p>
     </footer>
