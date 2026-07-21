@@ -338,24 +338,31 @@ svg {
 
 @media (min-width: 800px) {
   .pulse-panel {
-    grid-template-columns: 1.2fr 0.8fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .pulse-panel article {
   border: 1px solid var(--line);
   background: var(--surface);
-  padding: 1rem 1.15rem;
+  padding: 1.15rem 1.25rem;
   display: grid;
   gap: 0.65rem;
+  align-content: start;
 }
 
 .pulse-panel h3 {
   margin: 0;
-  font-size: var(--small);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  text-transform: none;
   font-weight: 800;
+}
+
+.pulse-panel p {
+  margin: 0;
+  color: var(--navy-soft);
 }
 
 .status-list {
