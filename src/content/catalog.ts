@@ -728,7 +728,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "uk-community-pulse",
     
-      "charity-and-causes",],
+      "charity-and-causes",
+      "dogecoin-tips-irl",],
     body: [
       "Dogecoin’s tip culture taught a generation that micro-generosity can be playful.",
       "Scammers copy the warmth and add a payment demand. Real tips never require you to send first to a stranger’s ‘matching’ address.",
@@ -837,7 +838,8 @@ export const catalog: PageNode[] = [
       "why-uk-domain",
       "tipping-culture",
     
-      "community-moderation",],
+      "community-moderation",
+      "dogecoin-tips-irl",],
     body: [
       "Open with a safety five minutes. Normalise seed hygiene talk like you normalise fire exits.",
       "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
@@ -1549,6 +1551,27 @@ export const catalog: PageNode[] = [
       "Thin books and big size make both worse.",
       "Not advice — just the maths of impatience.",
       "Compare total cost, not the headline ticker alone.",
+    ],
+  },
+  {
+    slug: "dogecoin-tips-irl",
+    title: "DOGE tips IRL",
+    pillar: "belonging",
+    summary: "Tipping in person without turning it into a scam demo.",
+    hook: "Warmth needs a verify step.",
+    tags: ["culture", "irl"],
+    related: [
+      "tipping-culture",
+      "qr-code-hygiene",
+      "meetups-and-irl",
+      "test-transactions",
+      "address-hygiene",
+    ],
+    body: [
+      "Show a receive address from your own wallet. Confirm on both screens.",
+      "Start tiny. Celebrate the ritual more than the amount.",
+      "Never ‘match’ a tip to a stranger’s urgent address.",
+      "IRL kindness plus verify steps is the UK brand of belonging.",
     ],
   },
 ];
