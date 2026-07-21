@@ -369,7 +369,8 @@ export const catalog: PageNode[] = [
       "paper-wallets",
       "mobile-wallet-hygiene",
       "family-and-inheritance",
-      "backup-drill",],
+      "backup-drill",
+      "recovery-phrase-storage",],
     body: [
       "A seed phrase recreates your wallet. Treat it like the deed to a house written on paper.",
       "Write it offline. Store it where thieves and flatmates can’t casually find it. Consider metal backups for serious amounts.",
@@ -1470,7 +1471,8 @@ export const catalog: PageNode[] = [
       "hardware-wallets",
       "first-doge-checklist",
       "stable-habits",
-    ],
+    
+      "recovery-phrase-storage",],
     body: [
       "Fund a tiny wallet, back it up, wipe the device path, restore, and confirm the dust is there.",
       "Do this before the balance is emotionally expensive.",
@@ -1687,6 +1689,27 @@ export const catalog: PageNode[] = [
       "Fake support tickets use official-looking templates. Hang up and reopen from a bookmark.",
       "If someone rushes you to ‘confirm you received it’ via screenshot, assume theatre.",
       "Explorers gossip; screenshots perform.",
+    ],
+  },
+  {
+    slug: "recovery-phrase-storage",
+    title: "Recovery phrase storage",
+    pillar: "safety",
+    summary: "Where to put seeds that isn’t ‘in photos’ or ‘in Slack’.",
+    hook: "Boring storage beats clever storage.",
+    tags: ["custody", "seed"],
+    related: [
+      "seed-phrases",
+      "paper-wallets",
+      "backup-drill",
+      "family-and-inheritance",
+      "self-custody-checklist",
+    ],
+    body: [
+      "Offline, durable, findable by the right person, invisible to the wrong one.",
+      "Cloud photos and chat apps are common failure modes.",
+      "Metal backups help against fire and coffee — still protect against theft.",
+      "Test retrieval in a drill before you trust the stash.",
     ],
   },
 ];
