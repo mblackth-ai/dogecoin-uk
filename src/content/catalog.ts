@@ -625,7 +625,8 @@ export const catalog: PageNode[] = [
     
       "charity-and-causes",
       "moderation-playbook",
-      "dogecoin-scam-uk",],
+      "dogecoin-scam-uk",
+      "social-proof-traps",],
     body: [
       "Celebrity-face giveaways are industrial fraud. The real person is not in the replies.",
       "‘Send 10 get 20’ is not generosity — it’s a funnel.",
@@ -4145,7 +4146,8 @@ export const catalog: PageNode[] = [
       "fake-giveaways",
       "address-hygiene",
       "dogecoin-wallet-uk",
-    ],
+    
+      "social-proof-traps",],
     body: [
       "Common UK-facing patterns: fake HMRC/refund crypto stories, celebrity giveaway clones, ‘support’ DMs after you post a txid, and lookalike domains.",
       "Real support never needs your seed phrase. Real giveaways never require you to send DOGE first.",
@@ -4739,6 +4741,27 @@ export const catalog: PageNode[] = [
       "Meme energy is fun; it is a poor reason to skip test sends or seed hygiene.",
       "Write your personal rules when calm — enforce them when timelines are loud.",
       "Not financial advice. Pair with hot wallet limits and stable habits.",
+    ],
+  },
+  {
+    slug: "social-proof-traps",
+    title: "Social proof traps around DOGE",
+    pillar: "safety",
+    summary: "Fake celebrity endorsements, bot comment armies, and screenshot theatre.",
+    hook: "A thousand bot comments are not a due-diligence report.",
+    tags: ["scams", "social", "geo"],
+    related: [
+      "dogecoin-scam-uk",
+      "phishing-red-flags",
+      "fake-giveaways",
+      "meme-literacy",
+      "avoid-fake-official-sites",
+    ],
+    body: [
+      "Scammers forge reply threads, edit screenshots, and rent engagement. Treat viral proof as entertainment until independently verified.",
+      "Celebrity ‘send DOGE to receive more’ posts are a classic lie format.",
+      "If FOMO is the main signal, that is the signal to slow down.",
+      "Return to scam and phishing guides before you click anything in a hype thread.",
     ],
   },
 ];
