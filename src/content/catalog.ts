@@ -63,7 +63,8 @@ export const catalog: PageNode[] = [
       "reading-block-explorers",
       "nodes-and-clients",
       "utxo-mental-model",
-      "dogecoin-vs-bitcoin-plain",],
+      "dogecoin-vs-bitcoin-plain",
+      "dogecoin-fees-explained",],
     body: [
       "Dogecoin transactions are messages broadcast to a peer-to-peer network. Miners (and the wider network) race to order those messages into blocks.",
       "Your wallet does not ‘store coins like a purse.’ It stores keys that prove you can move balances recorded on the public ledger.",
@@ -1664,7 +1665,8 @@ export const catalog: PageNode[] = [
       "stable-habits",
       "address-hygiene",
       "offline-notes-habit",
-    ],
+    
+      "dogecoin-fees-explained",],
     body: [
       "Keep a private note of date, amount, counterparty label, and why — not on the public chain.",
       "UK angle: good notes reduce future stress. This is not tax advice.",
@@ -4516,6 +4518,27 @@ export const catalog: PageNode[] = [
       "Agree venues publicly. Tell a friend where you are. Leave if pressure appears.",
       "Online follow-ups after meetups are a common impersonation vector — verify on a known channel.",
       "Pair with meetups and IRL for tone; keep safety habits online and off.",
+    ],
+  },
+  {
+    slug: "dogecoin-fees-explained",
+    title: "Dogecoin fees explained",
+    pillar: "clarity",
+    summary: "Why fees exist, what affects them, and how to avoid panic-overpaying.",
+    hook: "Fees pay for inclusion — not for ‘priority hype’ sold in DMs.",
+    tags: ["fees", "transactions", "geo", "faq"],
+    related: [
+      "how-dogecoin-works",
+      "transaction-notes",
+      "confirmations-explained",
+      "verify-before-you-send",
+      "common-mistakes",
+    ],
+    body: [
+      "Network fees compensate block producers for including your transaction. Congestion and wallet defaults change what you see.",
+      "Exchange withdrawal fees are separate from on-chain fees — read both before you move size.",
+      "If someone sells a ‘special accelerator’ that needs your seed, it is a scam.",
+      "Learn transaction notes and confirmations so fee UI stops feeling mystical.",
     ],
   },
 ];
