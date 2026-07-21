@@ -531,7 +531,8 @@ export const catalog: PageNode[] = [
       "culture-and-memes",
       "if-you-got-scammed",
     
-      "charity-and-causes",],
+      "charity-and-causes",
+      "moderation-playbook",],
     body: [
       "Celebrity-face giveaways are industrial fraud. The real person is not in the replies.",
       "‘Send 10 get 20’ is not generosity — it’s a funnel.",
@@ -1167,7 +1168,8 @@ export const catalog: PageNode[] = [
       "unofficial-disclaimer",
       "creators-and-builders",
     
-      "uk-meetup-safety",],
+      "uk-meetup-safety",
+      "moderation-playbook",],
     body: [
       "Keeping UK spaces kind without becoming a cult. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
@@ -1595,6 +1597,27 @@ export const catalog: PageNode[] = [
       "Announce that support never DMs first — say it out loud every time.",
       "Pair newcomers with a buddy for their first questions.",
       "A safe meetup grows the graph offline.",
+    ],
+  },
+  {
+    slug: "moderation-playbook",
+    title: "Moderation playbook",
+    pillar: "belonging",
+    summary: "Kick spam, keep kindness, refuse fake support theatre.",
+    hook: "Tone is infrastructure.",
+    tags: ["community", "trust"],
+    related: [
+      "community-moderation",
+      "support-impersonation",
+      "fake-giveaways",
+      "uk-community-pulse",
+      "proof-matrix",
+    ],
+    body: [
+      "Pin rules: no price calls as gospel, no seed requests, no ‘support’ in DMs.",
+      "Remove giveaway bots quickly — engagement is their oxygen.",
+      "Document patterns so new mods inherit judgement, not vibes alone.",
+      "Belonging scales when moderation is calm and consistent.",
     ],
   },
 ];
