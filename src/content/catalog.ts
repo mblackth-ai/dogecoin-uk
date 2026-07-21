@@ -996,7 +996,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "why-people-buy-doge",
       "social-engineering",
-    ],
+    
+      "hype-cycle-literacy",],
     body: [
       "How fear and euphoria hijack good procedures. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
@@ -1104,7 +1105,8 @@ export const catalog: PageNode[] = [
       "social-engineering",
       "fake-giveaways",
       "proof-matrix",
-    ],
+    
+      "hype-cycle-literacy",],
     body: [
       "How to read paid enthusiasm without becoming the exit liquidity. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
@@ -1641,6 +1643,27 @@ export const catalog: PageNode[] = [
       "Offer a tiny practice send, not a portfolio plan.",
       "Send them two links from this site — one clarity, one safety.",
       "Your tone teaches more than your tips.",
+    ],
+  },
+  {
+    slug: "hype-cycle-literacy",
+    title: "Hype cycle literacy",
+    pillar: "belonging",
+    summary: "Recognising attention waves without riding them blind.",
+    hook: "Volume is not validation.",
+    tags: ["psychology", "culture"],
+    related: [
+      "volatility-psychology",
+      "influencer-disclosures",
+      "why-people-buy-doge",
+      "myths-to-ignore",
+      "not-financial-advice",
+    ],
+    body: [
+      "Attention arrives in waves. Each wave onboard predators as well as people.",
+      "When every chat is certain, raise your verify standards — not your size.",
+      "This is literacy, not a timing strategy.",
+      "Belonging includes permission to sit out the carnival.",
     ],
   },
 ];
