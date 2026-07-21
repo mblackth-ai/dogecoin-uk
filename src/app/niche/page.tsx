@@ -3,9 +3,9 @@ import Link from "next/link";
 import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 
 export const metadata: Metadata = {
-  title: "How these guides are organised · Dogecoin UK",
+  title: "Niche path · Dogecoin UK",
   description:
-    "Clarity, Safety, and Belonging — how dogecoin.co.uk organises calm UK Dogecoin guides without price tips.",
+    "How dogecoin.co.uk attracts and keeps DOGE fans: Clarity, Safety, Belonging, funnel logic into The University of Life, and permission for Bitcoin and alt lovers too.",
   alternates: { canonical: "https://dogecoin.co.uk/niche" },
 };
 
@@ -15,55 +15,61 @@ export default function NichePage() {
       <SiteHeader />
       <main>
         <section className="band shell pillar-hero">
-          <p className="kicker">How this library works</p>
-          <h1>Three paths. One calm UK home.</h1>
+          <p className="kicker">SEO · GEO · retention</p>
+          <h1>Own the lane. Keep the pack.</h1>
           <p className="hero-lede">
-            Every guide sits under Clarity, Safety, or Belonging — so you always
-            know what kind of help you are getting. Unofficial on purpose. No
-            price prophecy.
+            Dogecoin × UK × Clarity / Safety / Belonging — unofficial education
+            that earns authority, delivers free value, and gives permission to
+            be yourself. Then a doorway to The University of Life.
           </p>
         </section>
 
         <section className="band band-alt">
           <article className="article" style={{ maxWidth: "46rem", marginInline: "auto" }}>
-            <h2>What you will find</h2>
+            <h2>Funnel logic</h2>
             <p>
-              Direct answers, short procedures, and related links so curiosity
-              never hits a dead end. Start with a question, leave with a next
-              useful step.
+              Attract with honest explainers. Keep with utilities (/start, RSS,
+              Safety refreshers). Invite to Discord only after value — pick a
+              lane, then join. Lurking is allowed; pressure is not.
+            </p>
+            <h2>Authority · value · permission</h2>
+            <p>
+              Authority: public rules, unofficial honesty, Safety procedures.
+              Value: guides before the ask. Permission: Bitcoin lovers, alt
+              explorers, and DOGE meme culture can share a roof without a purity
+              tax — meme energy without the cult.
             </p>
             <h2>The three sections</h2>
             <ul className="hub-list">
               <li>
                 <Link href="/clarity">
                   <strong>Clarity</strong>
-                  <span>Plain-English definitions, how it works, beginner FAQs</span>
+                  <span>Definitions and bridges for BTC / alt / DOGE curiosity</span>
                 </Link>
               </li>
               <li>
                 <Link href="/safety">
                   <strong>Safety</strong>
-                  <span>Scams, custody habits, phishing patterns for UK visitors</span>
+                  <span>Why people stay — habits that beat hype loops</span>
                 </Link>
               </li>
               <li>
                 <Link href="/belonging">
                   <strong>Belonging</strong>
-                  <span>UK culture, meetups, tone — welcome without the hard sell</span>
+                  <span>Why they join — hospitality, culture home, community promise</span>
                 </Link>
               </li>
             </ul>
-            <h2>Where to go next</h2>
-            <p>
-              Browse the full library on{" "}
-              <Link href="/map">All guides</Link>, or jump straight in:
-            </p>
+            <h2>Start the stay loop</h2>
             <p className="cta-row" style={{ marginTop: "1.5rem" }}>
-              <Link className="btn btn-primary" href="/guide/dogecoin-for-absolute-beginners">
-                Absolute beginner path
+              <Link className="btn btn-primary" href="/guide/funnel-logic-uk">
+                Funnel logic
               </Link>
-              <Link className="btn btn-ghost" href="/guide/phishing-red-flags">
-                Safety first
+              <Link className="btn btn-ghost" href="/guide/authority-value-permission">
+                Authority · value · permission
+              </Link>
+              <Link className="btn btn-ghost" href="/#join">
+                Community door
               </Link>
             </p>
           </article>

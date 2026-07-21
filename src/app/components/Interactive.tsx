@@ -78,11 +78,13 @@ export function LeadFunnel() {
     <section className="funnel community-funnel" aria-label={`Join ${COMMUNITY_NAME}`}>
       <div className="funnel-main">
         <p className="funnel-brand">{COMMUNITY_NAME}</p>
-        <h3 className="funnel-heading">Pick a lane. Meet the room.</h3>
+        <h3 className="funnel-heading">Choose the mood. Find your people.</h3>
         <p className="funnel-lede">
-          This site teaches. The Discord is where the three pillars get loud —
-          Clarity, Safety, Belonging — plus rooms for investing and the wider
-          university of life. Bring curiosity; leave the carnival barkers.
+          Funnel logic: guides first (value), then Discord (company). Authority
+          comes from checklists and clear boundaries — not fake “official”
+          costumes. Bitcoin lovers, alt explorers, and DOGE meme fans share the
+          roof; purity cults do not. Pick a lane when you want humans, not just
+          HTML.
         </p>
 
         <fieldset className="lane-picker">
@@ -142,8 +144,9 @@ export function LeadFunnel() {
           <strong>{availability.label}.</strong> {availability.window}
         </p>
         <p>
-          Brawling-friendly learning: DOGE pillars first, then the rest of life
-          — investing, habits, and honest questions.
+          Brawling-friendly learning: stay for utility and dignity, join for
+          conversation, leave if anyone asks for a seed. Authority, value, and
+          permission — that is the retention stack.
         </p>
         <p>
           <a href={DISCORD_INVITE} target="_blank" rel="noopener noreferrer">
@@ -158,29 +161,29 @@ export function LeadFunnel() {
 const PATHS = [
   {
     id: "new",
-    title: "Brand new to DOGE",
-    detail: "Absolute beginner path, then a calm first checklist.",
+    title: "Curious but careful",
+    detail: "Begin gently, then a calm first checklist you can reuse.",
     href: "/guide/dogecoin-for-absolute-beginners",
     next: "/guide/first-doge-checklist",
   },
   {
     id: "safe",
-    title: "Worried about scams",
-    detail: "Phishing patterns, fake giveaways, and seed-phrase red lines.",
+    title: "A bit on edge",
+    detail: "Phishing patterns, fake giveaways, and the seed red line.",
     href: "/guide/phishing-red-flags",
     next: "/guide/dogecoin-faq-safety",
   },
   {
     id: "wallet",
-    title: "Choosing a wallet",
-    detail: "Custodial vs self-custody, phones, and hardware options.",
+    title: "Need a practical next step",
+    detail: "Wallets explained — then self-custody habits that stick.",
     href: "/guide/wallets-explained",
     next: "/guide/self-custody-checklist",
   },
   {
     id: "uk",
-    title: "Why this .co.uk site",
-    detail: "Unofficial on purpose — local tone, clear boundaries, no hype.",
+    title: "Looking for a UK home",
+    detail: "Why this .co.uk corner exists — local, unofficial, no carnival.",
     href: "/guide/why-uk-domain",
     next: "/guide/uk-community-pulse",
   },
