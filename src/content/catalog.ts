@@ -35,7 +35,8 @@ export const catalog: PageNode[] = [
       "dogecoin-for-absolute-beginners",
     
       "dogecoin-uk-explained",
-      "dogecoin-vs-bitcoin-plain",],
+      "dogecoin-vs-bitcoin-plain",
+      "dogecoin-glossary-uk",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -2473,7 +2474,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "uk-search-intent",
     
-      "how-dogecoin-works",],
+      "how-dogecoin-works",
+      "dogecoin-glossary-uk",],
     body: [
       "Is it a joke? Origin yes; network no. Is it advice? Never here. Is .co.uk official? No — unofficial on purpose.",
       "Where do I start? Clarity hub, then Safety checklist, then a tiny practice send.",
@@ -4447,6 +4449,27 @@ export const catalog: PageNode[] = [
       "For new payees, send a tiny test first and confirm receipt before size.",
       "If anyone rushes you on a call or DM, stop. Urgency is a scam lubricant.",
       "Use address hygiene and test transactions as muscle memory.",
+    ],
+  },
+  {
+    slug: "dogecoin-glossary-uk",
+    title: "Dogecoin glossary (UK plain English)",
+    pillar: "clarity",
+    summary: "Short definitions for wallet, seed, confirmation, phishing, and self-custody.",
+    hook: "Jargon shrinks when each word gets one honest sentence.",
+    tags: ["glossary", "basics", "geo", "faq"],
+    related: [
+      "what-is-dogecoin",
+      "how-dogecoin-works",
+      "wallets-explained",
+      "seed-phrase-uk-guide",
+      "dogecoin-faqs",
+    ],
+    body: [
+      "Wallet: software or hardware that holds keys. Seed: recovery words for those keys. Confirmation: network acceptance of a transaction.",
+      "Phishing: tricking you into revealing keys or signing malicious actions. Self-custody: you hold the keys — and the responsibility.",
+      "Exchange account: a company holds assets for you under their terms; not the same as a personal wallet.",
+      "Use linked guides when a definition needs a procedure.",
     ],
   },
 ];
