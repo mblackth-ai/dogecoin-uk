@@ -969,7 +969,8 @@ export const catalog: PageNode[] = [
       "common-mistakes",
       "why-people-buy-doge",
     
-      "market-orders-basics",],
+      "market-orders-basics",
+      "spread-and-slippage",],
     body: [
       "Why the price you see is not always the price you get. This page exists so the graph has another door for that intent.",
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
@@ -1520,12 +1521,34 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "fees-and-speed",
       "volatility-psychology",
-    ],
+    
+      "spread-and-slippage",],
     body: [
       "A market order prioritises fill speed over exact price. Spreads and depth matter.",
       "During chaos, the fill can surprise you. Size down or wait.",
       "This page explains mechanics, not whether you should trade.",
       "If urgency is emotional, step away before you click.",
+    ],
+  },
+  {
+    slug: "spread-and-slippage",
+    title: "Spread and slippage",
+    pillar: "clarity",
+    summary: "The quiet cost between the price you saw and the fill you got.",
+    hook: "Screenshots are optimistic.",
+    tags: ["markets", "fees"],
+    related: [
+      "liquidity-basics",
+      "market-orders-basics",
+      "uk-buying-basics",
+      "fees-and-speed",
+      "common-mistakes",
+    ],
+    body: [
+      "Spread is the gap between buy and sell quotes. Slippage is movement while your order executes.",
+      "Thin books and big size make both worse.",
+      "Not advice — just the maths of impatience.",
+      "Compare total cost, not the headline ticker alone.",
     ],
   },
 ];
