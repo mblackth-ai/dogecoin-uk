@@ -284,7 +284,8 @@ export const catalog: PageNode[] = [
     
       "uk-search-intent",
       "uk-english-tone",
-      "dogecoin-uk-explained",],
+      "dogecoin-uk-explained",
+      "uk-doge-community-path",],
     body: [
       "dogecoin.co.uk is an unofficial community presence. It is not the Dogecoin Foundation and not a financial adviser.",
       "The `.co.uk` signal answers a quiet visitor question: ‘is there a local, sane explanation?’ Yes — start here.",
@@ -729,7 +730,8 @@ export const catalog: PageNode[] = [
       "dogecoin-quiet-channels",
       "dogecoin-hospitality",
       "dogecoin-uk-welcome-pack",
-    ],
+    
+      "uk-doge-community-path",],
     body: [
       "UK Dogecoin energy tends to be dryer humour, sharper scam awareness, and less carnival barking.",
       "We’ll grow this page with community notes, reading lists, and event pointers as they earn trust.",
@@ -4378,6 +4380,27 @@ export const catalog: PageNode[] = [
       "Dogecoin is often associated with tipping and meme culture; that culture does not change custody risk.",
       "Comparisons about ‘which will go up’ are speculation. This site skips that lane.",
       "Not financial advice — learn mechanisms first, then decide what (if anything) you personally hold.",
+    ],
+  },
+  {
+    slug: "uk-doge-community-path",
+    title: "UK Dogecoin community path",
+    pillar: "belonging",
+    summary: "How UK community shows up — tone, meetups, and verify-first culture over hype.",
+    hook: "Belonging here means calm company, not a telegram pump room.",
+    tags: ["uk", "community", "belonging", "geo"],
+    related: [
+      "why-uk-domain",
+      "meetups-and-irl",
+      "uk-community-pulse",
+      "culture-and-memes",
+      "stable-habits",
+    ],
+    body: [
+      "UK Dogecoin spaces range from quiet Discords to occasional meetups. Good rooms share links carefully and mock urgency scams.",
+      "If a group demands deposits, seed phrases, or ‘guaranteed’ returns, leave. Belonging never requires that.",
+      "Prefer rooms that point newcomers to safety guides before trade talk.",
+      "Start with the community pulse guide and why this UK domain exists.",
     ],
   },
 ];
