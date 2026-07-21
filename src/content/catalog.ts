@@ -3545,7 +3545,8 @@ export const catalog: PageNode[] = [
       "dogecoin-faqs",
     
       "buy-dogecoin-uk-education",
-      "dogecoin-tax-uk-awareness",],
+      "dogecoin-tax-uk-awareness",
+      "fca-crypto-uk-context",],
     body: [
       "Dogecoin (DOGE) is an open cryptocurrency people use to tip, learn, and transfer value online — it is not a UK-regulated bank product.",
       "If you are searching from the UK, start with definitions and safety before any buy/sell steps. Exchanges and wallets are separate products with their own rules.",
@@ -3735,7 +3736,8 @@ export const catalog: PageNode[] = [
       "not-financial-advice",
       "phishing-red-flags",
     
-      "dogecoin-wallet-uk",],
+      "dogecoin-wallet-uk",
+      "fca-crypto-uk-context",],
     body: [
       "Typical path: verify identity with a regulated platform if required, fund an account, buy DOGE, then withdraw to a wallet you control if that fits your plan.",
       "We do not rank exchanges. Compare fees, withdrawal support for DOGE, support quality, and whether the firm is authorised for what it claims.",
@@ -4331,6 +4333,27 @@ export const catalog: PageNode[] = [
       "This page is awareness only — not tax advice. Keep your own records of dates, amounts, fees, and counterparties.",
       "If tax is material to you, speak to a qualified adviser. Do not take tax tips from social DMs.",
       "Not financial advice. See HMRC’s own materials for official wording.",
+    ],
+  },
+  {
+    slug: "fca-crypto-uk-context",
+    title: "FCA and crypto — UK context for DOGE readers",
+    pillar: "clarity",
+    summary: "How UK financial promotion and firm-authorisation context affects what you see online.",
+    hook: "A shiny advert is not the same as a protected investment product.",
+    tags: ["uk", "regulation", "awareness", "geo"],
+    related: [
+      "dogecoin-uk-explained",
+      "buy-dogecoin-uk-education",
+      "not-financial-advice",
+      "dogecoin-scam-uk",
+      "phishing-red-flags",
+    ],
+    body: [
+      "In the UK, firms promoting certain crypto activities may need to meet financial promotion rules. That does not make DOGE ‘safe’ or guaranteed.",
+      "Check whether a firm is who it claims to be. Scammers copy logos. Prefer official registers and typed URLs over ad clicks.",
+      "Self-custody wallets and open networks sit outside ‘bank-style’ protections — loss from phishing is usually yours.",
+      "Use this as context, then return to safety checklists before you act.",
     ],
   },
 ];
