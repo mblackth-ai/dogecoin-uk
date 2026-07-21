@@ -115,7 +115,8 @@ export const catalog: PageNode[] = [
       "hardware-wallets",
       "mobile-wallet-hygiene",
       "open-source-trust",
-      "hot-wallet-limits",],
+      "hot-wallet-limits",
+      "browser-extension-risk",],
     body: [
       "An exchange wallet is convenient and fragile: the company holds the keys. Fine for tiny experiments; poor as a life vault.",
       "A self-custody wallet puts responsibility on you. That is freedom and liability in the same box.",
@@ -317,7 +318,8 @@ export const catalog: PageNode[] = [
       "support-impersonation",
       "address-hygiene",
     
-      "onboarding-a-friend",],
+      "onboarding-a-friend",
+      "browser-extension-risk",],
     body: [
       "Nobody legitimate needs your seed phrase. Not support. Not a ‘sync’ page. Not a DM.",
       "Lookalike domains, fake wallet connect prompts, and ‘verification’ deadlines are industrial-scale traps.",
@@ -1411,6 +1413,27 @@ export const catalog: PageNode[] = [
       "Captive portals are phishing theatres. Type known URLs yourself.",
       "VPN helps some threats and none of social engineering.",
       "If you must act on public Wi‑Fi, keep amounts tiny and eyes open.",
+    ],
+  },
+  {
+    slug: "browser-extension-risk",
+    title: "Browser extension risk",
+    pillar: "safety",
+    summary: "Wallet extensions: power tools with sharp edges.",
+    hook: "If it can sign, it can also steal.",
+    tags: ["wallets", "browser"],
+    related: [
+      "wallets-explained",
+      "phishing-red-flags",
+      "open-source-trust",
+      "seed-phrases",
+      "hot-wallet-limits",
+    ],
+    body: [
+      "Install only from sources you typed. Fake extensions clone icons for a living.",
+      "Lock the extension when idle. Review connected sites periodically.",
+      "A malicious page plus a confused click is enough — slow down on connect prompts.",
+      "Serious balances do not live in the browser long-term.",
     ],
   },
 ];
