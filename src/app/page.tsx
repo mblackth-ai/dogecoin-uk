@@ -131,12 +131,76 @@ export default function Home() {
           </ul>
           <p className="cta-row" style={{ marginTop: "1.25rem" }}>
             <Link className="btn btn-ghost" href="/guide/proof-matrix">
-              Read the full proof page
+              Why trust this site
             </Link>
           </p>
         </section>
 
-        <section className="band band-alt" id="join" aria-labelledby="join-title">
+        <section className="band band-alt" id="faq" aria-labelledby="faq-title">
+          <p className="kicker">Quick answers</p>
+          <h2 id="faq-title">Questions visitors ask first</h2>
+          <p>
+            Short replies — each one opens a deeper guide when you want more.
+          </p>
+          <ul className="hub-list faq-list">
+            <li>
+              <Link href="/guide/what-is-dogecoin">
+                <strong>What is Dogecoin, really?</strong>
+                <span>
+                  A cryptocurrency with a meme origin and a real network —
+                  humour on the outside, machinery underneath.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide/unofficial-disclaimer">
+                <strong>Is this the official Dogecoin site?</strong>
+                <span>
+                  No. dogecoin.co.uk is an unofficial UK community presence —
+                  and we say that on purpose.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide/seed-phrase-never-share">
+                <strong>Will anyone here ask for my seed phrase?</strong>
+                <span>
+                  Never. Anyone who asks is not support. Read the red-flag
+                  guides before you click anything urgent.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide/not-financial-advice">
+                <strong>Do you tell people what to buy?</strong>
+                <span>
+                  No price prophecy. We explain mechanics and risks so you can
+                  think — we do not manage your money.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide/first-doge-checklist">
+                <strong>Where should a complete beginner start?</strong>
+                <span>
+                  Clarity first, then a calm first-DOGE checklist, then safety
+                  habits before any serious balance.
+                </span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/guide/scam-patterns-uk">
+                <strong>What do UK DOGE scams usually look like?</strong>
+                <span>
+                  Urgency, fake giveaways, recovery cons, and lookalike
+                  support — local accent, same script.
+                </span>
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        <section className="band" id="join" aria-labelledby="join-title">
           <p className="kicker">Stay in the loop</p>
           <h2 id="join-title">Say what you want. We’ll keep it useful.</h2>
           <p>

@@ -53,8 +53,8 @@ export default async function GuidePage({ params }: Props) {
           <h1>{page.title}</h1>
           <p className="article-hook">{page.hook}</p>
           <p className="article-summary">{page.summary}</p>
-          {page.body.map((paragraph) => (
-            <p key={paragraph.slice(0, 24)}>{paragraph}</p>
+          {page.body.map((paragraph, index) => (
+            <p key={`${page.slug}-${index}`}>{paragraph}</p>
           ))}
           <p className="tag-row">
             {page.tags.map((tag) => (
