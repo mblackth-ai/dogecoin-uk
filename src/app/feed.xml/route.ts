@@ -1,4 +1,4 @@
-import { getLatestGuides } from "../../../content";
+import { getLatestGuides } from "../../content";
 
 export const revalidate = 3600;
 
