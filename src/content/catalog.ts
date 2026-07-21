@@ -501,7 +501,8 @@ export const catalog: PageNode[] = [
       "self-custody-checklist",
     
       "test-transactions",
-      "dust-and-spam",],
+      "dust-and-spam",
+      "qr-code-hygiene",],
     body: [
       "Malware can swap addresses on your clipboard. Verify on the device screen, not only in your head.",
       "Save known addresses with labels. Prefer QR for in-person where possible.",
@@ -1106,7 +1107,8 @@ export const catalog: PageNode[] = [
       "first-doge-checklist",
       "common-mistakes",
       "confirmations-explained",
-    ],
+    
+      "qr-code-hygiene",],
     body: [
       "The tiny send that prevents the huge regret. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
@@ -1365,6 +1367,27 @@ export const catalog: PageNode[] = [
       "Pick a personal ceiling you can lose without wrecking your month — then enforce it.",
       "When the hot balance creeps up ‘temporarily,’ schedule the move before the next hype wave.",
       "Safety is a limit you honour when markets are loud.",
+    ],
+  },
+  {
+    slug: "qr-code-hygiene",
+    title: "QR code hygiene",
+    pillar: "safety",
+    summary: "Scanning safely without feeding malware or wrong addresses.",
+    hook: "A QR is just text wearing sunglasses.",
+    tags: ["opsec", "addresses"],
+    related: [
+      "address-hygiene",
+      "test-transactions",
+      "phishing-red-flags",
+      "mobile-wallet-hygiene",
+      "common-mistakes",
+    ],
+    body: [
+      "Read the decoded address before you confirm. Stickers and overlays exist in the wild.",
+      "Prefer showing your receive QR from your own wallet — not a PDF someone emailed.",
+      "For large moves, still do a dust test after scanning.",
+      "QR convenience dies the moment you stop verifying.",
     ],
   },
 ];
