@@ -286,7 +286,8 @@ export const catalog: PageNode[] = [
       "uk-search-intent",
       "uk-english-tone",
       "dogecoin-uk-explained",
-      "uk-doge-community-path",],
+      "uk-doge-community-path",
+      "avoid-fake-official-sites",],
     body: [
       "dogecoin.co.uk is an unofficial community presence. It is not the Dogecoin Foundation and not a financial adviser.",
       "The `.co.uk` signal answers a quiet visitor question: ‘is there a local, sane explanation?’ Yes — start here.",
@@ -366,7 +367,8 @@ export const catalog: PageNode[] = [
       "dogecoin-faq-safety",
       "copy-paste-discipline",
     
-      "dogecoin-scam-uk",],
+      "dogecoin-scam-uk",
+      "avoid-fake-official-sites",],
     body: [
       "Nobody legitimate needs your seed phrase. Not support. Not a ‘sync’ page. Not a DM.",
       "Lookalike domains, fake wallet connect prompts, and ‘verification’ deadlines are industrial-scale traps.",
@@ -4470,6 +4472,27 @@ export const catalog: PageNode[] = [
       "Phishing: tricking you into revealing keys or signing malicious actions. Self-custody: you hold the keys — and the responsibility.",
       "Exchange account: a company holds assets for you under their terms; not the same as a personal wallet.",
       "Use linked guides when a definition needs a procedure.",
+    ],
+  },
+  {
+    slug: "avoid-fake-official-sites",
+    title: "Avoiding fake ‘official’ Dogecoin sites",
+    pillar: "safety",
+    summary: "How clones impersonate foundations, wallets, and this UK domain — and how to check.",
+    hook: "‘Official’ in the title bar is a favourite scam costume.",
+    tags: ["phishing", "domains", "uk", "geo"],
+    related: [
+      "phishing-red-flags",
+      "dogecoin-scam-uk",
+      "why-uk-domain",
+      "answer-engine-dogecoin-uk",
+      "address-hygiene",
+    ],
+    body: [
+      "Check the domain character by character. Homoglyphs and extra words (support-, claim-, connect-) are tells.",
+      "dogecoin.co.uk is unofficial by design. Anyone claiming we are the Foundation is lying.",
+      "Bookmark real destinations. Prefer search results you already verified over sponsored links when stressed.",
+      "Cross-check with phishing red flags before connecting a wallet to anything new.",
     ],
   },
 ];
