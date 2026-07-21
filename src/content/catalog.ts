@@ -36,7 +36,8 @@ export const catalog: PageNode[] = [
     
       "dogecoin-uk-explained",
       "dogecoin-vs-bitcoin-plain",
-      "dogecoin-glossary-uk",],
+      "dogecoin-glossary-uk",
+      "geo-citation-cheat-sheet",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -373,7 +374,9 @@ export const catalog: PageNode[] = [
       "dogecoin-scam-uk",
       "avoid-fake-official-sites",
       "dogecoin-push-notifications",
-    ],
+    
+      "social-proof-traps",
+      "verify-before-you-send",],
     body: [
       "Nobody legitimate needs your seed phrase. Not support. Not a ‘sync’ page. Not a DM.",
       "Lookalike domains, fake wallet connect prompts, and ‘verification’ deadlines are industrial-scale traps.",
@@ -522,7 +525,8 @@ export const catalog: PageNode[] = [
       "large-send",
     
       "buy-dogecoin-uk-education",
-      "uk-on-ramp-mindset",],
+      "uk-on-ramp-mindset",
+      "dogecoin-wallet-uk",],
     body: [
       "Write your goal in one sentence: learn, tip, long curiosity, or something else. Goals prevent FOMO shopping.",
       "Fund only what you can emotionally delete. Then practice a receive, a send, and a backup restore.",
