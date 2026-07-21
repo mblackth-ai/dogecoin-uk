@@ -2,15 +2,19 @@ import Link from "next/link";
 import {
   getGraphStats,
   getHubs,
+  getLatestGuides,
   getPagesByPillar,
   PILLARS,
 } from "../content";
 import { LeadFunnel, StartHerePaths } from "./components/Interactive";
+import { LivePulse } from "./components/LivePulse";
+import { NewsFeed } from "./components/NewsFeed";
 import { SiteFooter, SiteHeader } from "./components/SiteChrome";
 
 export default function Home() {
   const stats = getGraphStats();
   const hubs = getHubs();
+  const latest = getLatestGuides(5);
 
   return (
     <>
@@ -33,8 +37,8 @@ export default function Home() {
                 <a className="btn btn-primary" href="#join">
                   Join the community
                 </a>
-                <Link className="btn btn-ghost" href="/map">
-                  Browse all guides
+                <Link className="btn btn-ghost" href="/start">
+                  Open start page
                 </Link>
               </p>
             </header>
@@ -202,6 +206,43 @@ export default function Home() {
               </Link>
             </li>
           </ul>
+        </section>
+
+        <section className="band band-alt" id="tools" aria-labelledby="tools-title">
+          <p className="kicker">Daily tools</p>
+          <h2 id="tools-title">Price pulse, news, and a start page.</h2>
+          <p>
+            Keep dogecoin.co.uk handy — live market context (not tips), a guide
+            feed you can subscribe to, and a bookmarkable start page with Google
+            / Gemini search.
+          </p>
+          <div className="shell">
+            <div className="home-tools">
+              <LivePulse compact />
+              <div className="home-tools-card">
+                <h3>Make this your launchpad</h3>
+                <p>
+                  Set{" "}
+                  <Link href="/start">
+                    <code>dogecoin.co.uk/start</code>
+                  </Link>{" "}
+                  as a homepage or bookmark. Search this site, Google, or Gemini —
+                  then jump into the community when you want people, not pages.
+                </p>
+                <p className="cta-row">
+                  <Link className="btn btn-primary" href="/start">
+                    Open start page
+                  </Link>
+                  <a className="btn btn-ghost" href="/feed.xml">
+                    RSS feed
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div style={{ marginTop: "1.5rem" }}>
+              <NewsFeed guides={latest} title="Latest guides" />
+            </div>
+          </div>
         </section>
 
         <section className="band" id="join" aria-labelledby="join-title">

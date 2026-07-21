@@ -13,6 +13,7 @@ export function SiteHeader() {
         <Link href="/belonging">Belonging</Link>
         <Link href="/map">Guides</Link>
         <Link href="/niche">Niche</Link>
+        <Link href="/start">Start</Link>
         <Link href="/#join">Community</Link>
       </nav>
     </header>
@@ -26,6 +27,8 @@ export function SiteFooter() {
       <p>
         <strong>Dogecoin</strong> · dogecoin.co.uk · Unofficial community site ·{" "}
         <Link href="/niche">Niche path</Link> ·{" "}
+        <Link href="/start">Start page</Link> ·{" "}
+        <a href="/feed.xml">RSS</a> ·{" "}
         <a href="/llms.txt">llms.txt</a>
       </p>
       <p className="audit" aria-label="Guide library size">

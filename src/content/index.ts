@@ -43,3 +43,37 @@ export function getGraphStats() {
     },
   };
 }
+
+/** Newest expansions sit at the end of the catalog — reverse for feeds. */
+export function getLatestGuides(limit = 12): PageNode[] {
+  return [...catalog].slice(-limit).reverse();
+}
+
+export function searchGuides(query: string, limit = 8): PageNode[] {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+  const scored = catalog
+    .map((page) => {
+      const hay = `${page.title} ${page.summary} ${page.hook} ${page.tags.join(" ")} ${page.slug}`.toLowerCase();
+      let score = 0;
+      if (page.title.toLowerCase().includes(q)) score += 5;
+      if (page.slug.includes(q.replace(/\s+/g, "-"))) score += 4;
+      if (hay.includes(q)) score += 2;
+      for (const word of q.split(/\s+/)) {
+        if (word.length > 2 && hay.includes(word)) score += 1;
+      }
+      return { page, score };
+    })
+    .filter((row) => row.score > 0)
+    .sort((a, b) => b.score - a.score);
+  return scored.slice(0, limit).map((row) => row.page);
+}
+
+export function getSearchIndex() {
+  return catalog.map((page) => ({
+    slug: page.slug,
+    title: page.title,
+    summary: page.summary,
+    pillar: page.pillar,
+  }));
+}

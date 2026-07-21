@@ -23,7 +23,12 @@ export const metadata: Metadata = {
   description:
     "Unofficial UK community site for Dogecoin: plain-English explainers, safety guides, and updates without the circus. Not financial advice.",
   metadataBase: new URL("https://dogecoin.co.uk"),
-  alternates: { canonical: "https://dogecoin.co.uk" },
+  alternates: {
+    canonical: "https://dogecoin.co.uk",
+    types: {
+      "application/rss+xml": "https://dogecoin.co.uk/feed.xml",
+    },
+  },
   openGraph: {
     title: "Dogecoin — UK home for DOGE",
     description:

@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/belonging`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/map`, lastModified: new Date(), changeFrequency: "daily", priority: 0.7 },
     { url: `${base}/niche`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${base}/start`, lastModified: new Date(), changeFrequency: "daily", priority: 0.85 },
     ...guides,
   ];
 }
