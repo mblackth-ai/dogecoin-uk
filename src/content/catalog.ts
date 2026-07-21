@@ -47,7 +47,8 @@ export const catalog: PageNode[] = [
     
       "confirmations-explained",
       "reading-block-explorers",
-      "nodes-and-clients",],
+      "nodes-and-clients",
+      "utxo-mental-model",],
     body: [
       "Dogecoin transactions are messages broadcast to a peer-to-peer network. Miners (and the wider network) race to order those messages into blocks.",
       "Your wallet does not ‘store coins like a purse.’ It stores keys that prove you can move balances recorded on the public ledger.",
@@ -140,7 +141,8 @@ export const catalog: PageNode[] = [
     
       "liquidity-basics",
       "test-transactions",
-      "network-congestion",],
+      "network-congestion",
+      "utxo-mental-model",],
     body: [
       "Network fees buy priority. During quiet periods they are negligible. During chaos, patience beats panic.",
       "Confirmation time is not ‘instant like Apple Pay.’ Plan for minutes, not milliseconds, when it matters.",
@@ -1480,6 +1482,27 @@ export const catalog: PageNode[] = [
       "UK angle: good notes reduce future stress. This is not tax advice.",
       "Screenshots alone rot. Structured notes survive.",
       "Clarity compounds when your history is readable.",
+    ],
+  },
+  {
+    slug: "utxo-mental-model",
+    title: "UTXO mental model",
+    pillar: "clarity",
+    summary: "Coins as notes, not a single bank balance number.",
+    hook: "Understanding inputs prevents weird fee surprises.",
+    tags: ["network", "basics"],
+    related: [
+      "how-dogecoin-works",
+      "fees-and-speed",
+      "reading-block-explorers",
+      "dust-and-spam",
+      "confirmations-explained",
+    ],
+    body: [
+      "Many cryptocurrencies track unspent outputs. Your ‘balance’ is the sum of notes you can spend.",
+      "Sending may consume multiple notes and create change — explorers make this visible.",
+      "Dust and spam interact with this model; that’s why address hygiene matters.",
+      "You do not need to be an engineer — just stop expecting a bank UI under the hood.",
     ],
   },
 ];
