@@ -114,7 +114,8 @@ export const catalog: PageNode[] = [
     
       "hardware-wallets",
       "mobile-wallet-hygiene",
-      "open-source-trust",],
+      "open-source-trust",
+      "hot-wallet-limits",],
     body: [
       "An exchange wallet is convenient and fragile: the company holds the keys. Fine for tiny experiments; poor as a life vault.",
       "A self-custody wallet puts responsibility on you. That is freedom and liability in the same box.",
@@ -1168,7 +1169,8 @@ export const catalog: PageNode[] = [
       "self-custody-checklist",
       "exchange-vs-wallet",
       "first-doge-checklist",
-    ],
+    
+      "hot-wallet-limits",],
     body: [
       "Match custody tier to amount and life chaos. This page exists so the graph has another door for that intent.",
       "Pillar alignment: safety. Read it slowly, then follow two related links.",
@@ -1342,6 +1344,27 @@ export const catalog: PageNode[] = [
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
       "UK frame: keep procedures boring and verify outside DMs.",
       "When in doubt, return to the Safety hub before acting.",
+    ],
+  },
+  {
+    slug: "hot-wallet-limits",
+    title: "Hot wallet limits",
+    pillar: "safety",
+    summary: "How much to keep online vs cold — a practical ceiling.",
+    hook: "Convenience has a balance cap.",
+    tags: ["custody", "limits"],
+    related: [
+      "cold-storage-tiers",
+      "wallets-explained",
+      "self-custody-checklist",
+      "first-doge-checklist",
+      "stable-habits",
+    ],
+    body: [
+      "Hot wallets are for spending and learning amounts. Cold storage is for sleep-at-night amounts.",
+      "Pick a personal ceiling you can lose without wrecking your month — then enforce it.",
+      "When the hot balance creeps up ‘temporarily,’ schedule the move before the next hype wave.",
+      "Safety is a limit you honour when markets are loud.",
     ],
   },
 ];
