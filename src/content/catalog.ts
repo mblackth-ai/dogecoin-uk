@@ -975,7 +975,8 @@ export const catalog: PageNode[] = [
       "dogecoin-tips-irl",
       "uk-meetup-safety",
       "meetup-first-timer",
-    ],
+    
+      "irl-doge-meetup-habits",],
     body: [
       "Open with a safety five minutes. Normalise seed hygiene talk like you normalise fire exits.",
       "Avoid on-stage price prophecy. Teach a skill: address verify, wallet backup, scam teardown.",
@@ -1769,7 +1770,8 @@ export const catalog: PageNode[] = [
       "phishing-red-flags",
       "onboarding-a-friend",
       "uk-community-pulse",
-    ],
+    
+      "irl-doge-meetup-habits",],
     body: [
       "Public venue, clear end time, no seed phrases on stage, no pressure to install apps on the spot.",
       "Announce that support never DMs first — say it out loud every time.",
@@ -4493,6 +4495,27 @@ export const catalog: PageNode[] = [
       "dogecoin.co.uk is unofficial by design. Anyone claiming we are the Foundation is lying.",
       "Bookmark real destinations. Prefer search results you already verified over sponsored links when stressed.",
       "Cross-check with phishing red flags before connecting a wallet to anything new.",
+    ],
+  },
+  {
+    slug: "irl-doge-meetup-habits",
+    title: "IRL Dogecoin meetup habits",
+    pillar: "belonging",
+    summary: "In-person etiquette: no seed talk, no on-the-spot transfers, verify hosts.",
+    hook: "IRL meetups should feel like coffee — not a mobile signing ceremony.",
+    tags: ["uk", "meetups", "safety", "belonging"],
+    related: [
+      "meetups-and-irl",
+      "uk-community-pulse",
+      "uk-doge-community-path",
+      "verify-before-you-send",
+      "dogecoin-scam-uk",
+    ],
+    body: [
+      "Do not bring seed phrases. Do not scan stranger QRs to ‘join the group wallet.’",
+      "Agree venues publicly. Tell a friend where you are. Leave if pressure appears.",
+      "Online follow-ups after meetups are a common impersonation vector — verify on a known channel.",
+      "Pair with meetups and IRL for tone; keep safety habits online and off.",
     ],
   },
 ];
