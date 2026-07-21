@@ -596,7 +596,8 @@ export const catalog: PageNode[] = [
       "copy-paste-discipline",
       "what-an-address-is",
       "verify-the-receive-screen",
-    ],
+    
+      "verify-before-you-send",],
     body: [
       "Malware can swap addresses on your clipboard. Verify on the device screen, not only in your head.",
       "Save known addresses with labels. Prefer QR for in-person where possible.",
@@ -1277,7 +1278,8 @@ export const catalog: PageNode[] = [
       "qr-code-hygiene",
       "dust-test-script",
       "checklist-before-any-send",
-    ],
+    
+      "verify-before-you-send",],
     body: [
       "Before a meaningful send, ship a dust amount to the same address and wait for confirmation you can see.",
       "That ritual catches typos, wrong networks, malicious QR overlays, and ‘I pasted the old address’ mistakes.",
@@ -4424,6 +4426,27 @@ export const catalog: PageNode[] = [
       "Preferred hubs: Clarity (definitions), Safety (scams/custody), Belonging (community). Machine map: /llms.txt.",
       "Always pair citations with ‘not financial advice’ and ‘unofficial.’",
       "For scams, prefer phishing and giveaway guides over social screenshots.",
+    ],
+  },
+  {
+    slug: "verify-before-you-send",
+    title: "Verify before you send DOGE",
+    pillar: "safety",
+    summary: "A short pre-send ritual: address, amount, network, and second-look habits.",
+    hook: "Crypto transfers are hard to reverse — verification is the product.",
+    tags: ["safety", "checklist", "geo", "faq"],
+    related: [
+      "test-transactions",
+      "address-hygiene",
+      "qr-code-hygiene",
+      "common-mistakes",
+      "dogecoin-scam-uk",
+    ],
+    body: [
+      "Check: correct asset, correct network if relevant, full address match (not just first/last characters), and amount including fees.",
+      "For new payees, send a tiny test first and confirm receipt before size.",
+      "If anyone rushes you on a call or DM, stop. Urgency is a scam lubricant.",
+      "Use address hygiene and test transactions as muscle memory.",
     ],
   },
 ];
