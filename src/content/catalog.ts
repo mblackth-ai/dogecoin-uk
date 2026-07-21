@@ -23,7 +23,8 @@ export const catalog: PageNode[] = [
       "tipping-culture",
       "dogecoin-history",
       "forks-and-clones",
-      "uk-search-intent",],
+      "uk-search-intent",
+      "newcomer-script",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -1275,7 +1276,8 @@ export const catalog: PageNode[] = [
       "what-is-dogecoin",
       "meetups-and-irl",
       "tipping-culture",
-    ],
+    
+      "newcomer-script",],
     body: [
       "Teach DOGE without dunking or dumping risk on them. This page exists so the graph has another door for that intent.",
       "Pillar alignment: belonging. Read it slowly, then follow two related links.",
@@ -1618,6 +1620,27 @@ export const catalog: PageNode[] = [
       "Remove giveaway bots quickly — engagement is their oxygen.",
       "Document patterns so new mods inherit judgement, not vibes alone.",
       "Belonging scales when moderation is calm and consistent.",
+    ],
+  },
+  {
+    slug: "newcomer-script",
+    title: "Newcomer script",
+    pillar: "belonging",
+    summary: "What to say in the first five minutes to a curious friend.",
+    hook: "Teaching is belonging with a checklist.",
+    tags: ["teaching", "community"],
+    related: [
+      "onboarding-a-friend",
+      "what-is-dogecoin",
+      "first-doge-checklist",
+      "phishing-red-flags",
+      "meme-literacy",
+    ],
+    body: [
+      "Start with what DOGE is, what it isn’t, and one safety rule: never share a seed.",
+      "Offer a tiny practice send, not a portfolio plan.",
+      "Send them two links from this site — one clarity, one safety.",
+      "Your tone teaches more than your tips.",
     ],
   },
 ];
