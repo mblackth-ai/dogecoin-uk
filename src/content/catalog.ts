@@ -879,7 +879,8 @@ export const catalog: PageNode[] = [
       "fees-and-speed",
       "common-mistakes",
     
-      "dust-and-spam",],
+      "dust-and-spam",
+      "transaction-notes",],
     body: [
       "Paste a txid into a reputable explorer. Confirm amount, addresses, and confirmation count.",
       "Never trust a cropped image from a stranger as proof of payment.",
@@ -1071,7 +1072,8 @@ export const catalog: PageNode[] = [
       "exchange-vs-wallet",
       "first-doge-checklist",
       "why-uk-domain",
-    ],
+    
+      "transaction-notes",],
     body: [
       "Record-keeping mindset — not advice, just future-you kindness. This page exists so the graph has another door for that intent.",
       "Pillar alignment: clarity. Read it slowly, then follow two related links.",
@@ -1457,6 +1459,27 @@ export const catalog: PageNode[] = [
       "Do this before the balance is emotionally expensive.",
       "Note how long it took and where you got stuck — fix the process, not just the mood.",
       "A drill turns panic into muscle memory.",
+    ],
+  },
+  {
+    slug: "transaction-notes",
+    title: "Transaction notes",
+    pillar: "clarity",
+    summary: "Labelling sends so future-you knows what happened.",
+    hook: "Memory is not a ledger.",
+    tags: ["habits", "records"],
+    related: [
+      "uk-tax-mindset",
+      "reading-block-explorers",
+      "first-doge-checklist",
+      "stable-habits",
+      "address-hygiene",
+    ],
+    body: [
+      "Keep a private note of date, amount, counterparty label, and why — not on the public chain.",
+      "UK angle: good notes reduce future stress. This is not tax advice.",
+      "Screenshots alone rot. Structured notes survive.",
+      "Clarity compounds when your history is readable.",
     ],
   },
 ];
