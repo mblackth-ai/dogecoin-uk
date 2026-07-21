@@ -34,7 +34,8 @@ export const catalog: PageNode[] = [
       "three-links-rule",
       "dogecoin-for-absolute-beginners",
     
-      "dogecoin-uk-explained",],
+      "dogecoin-uk-explained",
+      "dogecoin-vs-bitcoin-plain",],
     body: [
       "Dogecoin is a cryptocurrency that started as a joke and became a living culture. The coin moves on a public network; the meme moves through people.",
       "You do not need a finance degree to hold a mental model. DOGE is digital cash with a community that prizes humour, tips, and approachability over gatekeeping.",
@@ -60,7 +61,8 @@ export const catalog: PageNode[] = [
       "confirmations-explained",
       "reading-block-explorers",
       "nodes-and-clients",
-      "utxo-mental-model",],
+      "utxo-mental-model",
+      "dogecoin-vs-bitcoin-plain",],
     body: [
       "Dogecoin transactions are messages broadcast to a peer-to-peer network. Miners (and the wider network) race to order those messages into blocks.",
       "Your wallet does not ‘store coins like a purse.’ It stores keys that prove you can move balances recorded on the public ledger.",
@@ -2465,7 +2467,8 @@ export const catalog: PageNode[] = [
       "is-dogecoin-a-joke",
       "not-financial-advice",
       "uk-search-intent",
-    ],
+    
+      "how-dogecoin-works",],
     body: [
       "Is it a joke? Origin yes; network no. Is it advice? Never here. Is .co.uk official? No — unofficial on purpose.",
       "Where do I start? Clarity hub, then Safety checklist, then a tiny practice send.",
@@ -4354,6 +4357,27 @@ export const catalog: PageNode[] = [
       "Check whether a firm is who it claims to be. Scammers copy logos. Prefer official registers and typed URLs over ad clicks.",
       "Self-custody wallets and open networks sit outside ‘bank-style’ protections — loss from phishing is usually yours.",
       "Use this as context, then return to safety checklists before you act.",
+    ],
+  },
+  {
+    slug: "dogecoin-vs-bitcoin-plain",
+    title: "Dogecoin vs Bitcoin — plain English",
+    pillar: "clarity",
+    summary: "Shared ideas and real differences without tribal scorekeeping or price forecasts.",
+    hook: "Both are cryptocurrencies; culture, supply design, and typical use differ.",
+    tags: ["basics", "comparison", "geo"],
+    related: [
+      "what-is-dogecoin",
+      "how-dogecoin-works",
+      "dogecoin-uk-explained",
+      "not-financial-advice",
+      "dogecoin-faqs",
+    ],
+    body: [
+      "Bitcoin and Dogecoin both use public ledgers and private keys. They are separate networks with separate coins.",
+      "Dogecoin is often associated with tipping and meme culture; that culture does not change custody risk.",
+      "Comparisons about ‘which will go up’ are speculation. This site skips that lane.",
+      "Not financial advice — learn mechanisms first, then decide what (if anything) you personally hold.",
     ],
   },
 ];
